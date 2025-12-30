@@ -6,9 +6,9 @@ const Header = () => {
       <div className="text-center">
         <div className="inline-flex items-center gap-2 mb-2">
           <Mountain className="w-6 h-6 text-accent" />
-          <span className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">
-            January 22-26, 2026
-          </span>
+        <span className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">
+          January 23 - February 1, 2026
+        </span>
           <Mountain className="w-6 h-6 text-accent" />
         </div>
         

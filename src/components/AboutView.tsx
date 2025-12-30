@@ -39,8 +39,8 @@ const AboutView = () => {
       <div className="grid grid-cols-2 gap-3 mb-4">
         <div className="glass-card rounded-xl p-4 text-center">
           <Calendar className="w-6 h-6 text-secondary mx-auto mb-2" />
-          <p className="font-display text-lg text-foreground">5 Days</p>
-          <p className="text-xs text-muted-foreground">Jan 22-26, 2026</p>
+          <p className="font-display text-lg text-foreground">10 Days</p>
+          <p className="text-xs text-muted-foreground">Jan 23 - Feb 1, 2026</p>
         </div>
         <div className="glass-card rounded-xl p-4 text-center">
           <MapPin className="w-6 h-6 text-accent mx-auto mb-2" />
