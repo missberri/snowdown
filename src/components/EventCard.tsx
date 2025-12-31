@@ -9,7 +9,8 @@ interface EventCardProps {
 }
 
 const EventCard = ({ event, onClick, isSelected }: EventCardProps) => {
-  const formattedDate = format(parseISO(event.date), 'EEE, MMM d');
+  const isAllWeek = event.date === 'all-week';
+  const formattedDate = isAllWeek ? 'All Week' : format(parseISO(event.date), 'EEE, MMM d');
 
   return (
     <button

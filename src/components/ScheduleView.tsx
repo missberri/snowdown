@@ -55,7 +55,7 @@ const ScheduleView = ({ onEventSelect, selectedEventId }: ScheduleViewProps) => 
           <div key={date} className="mb-6">
             <div className="sticky top-0 bg-background/80 backdrop-blur-sm py-2 mb-3 z-10">
               <h2 className="font-display text-xl text-accent">
-                {format(parseISO(date), 'EEEE, MMMM d')}
+                {date === 'all-week' ? 'All Week Events' : format(parseISO(date), 'EEEE, MMMM d')}
               </h2>
             </div>
             
