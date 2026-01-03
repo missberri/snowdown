@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { events } from '@/data/events';
 import EventCard from './EventCard';
 import { format, parseISO } from 'date-fns';
+import { useEventFullDescription } from '@/hooks/useEventFullDescription';
 
 interface ScheduleViewProps {
   onEventSelect: (eventId: string) => void;
@@ -18,7 +19,14 @@ const ScheduleView = ({ onEventSelect, selectedEventId }: ScheduleViewProps) => 
 
   const [activeDate, setActiveDate] = useState(uniqueDates[0] || 'all-week');
 
-  const filteredEvents = events.filter(e => e.date === activeDate);
+  const filteredEvents = events.filter((e) => e.date === activeDate);
+
+  const selectedEvent = useMemo(
+    () => (selectedEventId ? events.find((e) => e.id === selectedEventId) ?? null : null),
+    [selectedEventId]
+  );
+
+  const { fullDescription, loading: fullDescriptionLoading } = useEventFullDescription(selectedEvent);
 
   const formatDateTab = (date: string) => {
     if (date === 'all-week') return 'All Week';
@@ -59,19 +67,24 @@ const ScheduleView = ({ onEventSelect, selectedEventId }: ScheduleViewProps) => 
         </div>
         
         <div className="space-y-3">
-          {filteredEvents.map((event, index) => (
-            <div
-              key={event.id}
-              className="animate-fade-in"
-              style={{ animationDelay: `${index * 0.05}s` }}
-            >
-              <EventCard
-                event={event}
-                onClick={() => onEventSelect(event.id)}
-                isSelected={selectedEventId === event.id}
-              />
-            </div>
-          ))}
+          {filteredEvents.map((event, index) => {
+            const isSelected = selectedEventId === event.id;
+            return (
+              <div
+                key={event.id}
+                className="animate-fade-in"
+                style={{ animationDelay: `${index * 0.05}s` }}
+              >
+                <EventCard
+                  event={event}
+                  onClick={() => onEventSelect(event.id)}
+                  isSelected={isSelected}
+                  fullDescription={isSelected ? fullDescription ?? undefined : undefined}
+                  isDescriptionLoading={isSelected ? fullDescriptionLoading : false}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

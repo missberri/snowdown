@@ -12,8 +12,7 @@ const Index = () => {
 
   const handleEventSelect = (eventId: string) => {
     // Toggle selection - if clicking same event, deselect; otherwise select new one
-    setSelectedEventId(prev => prev === eventId ? null : eventId);
-    console.log('Event selected:', eventId);
+    setSelectedEventId((prev) => (prev === eventId ? null : eventId));
   };
 
   return (
