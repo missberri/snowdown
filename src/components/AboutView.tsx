@@ -72,9 +72,8 @@ const AboutView = () => {
           visitors alike.
         </p>
         <p className="text-sm text-muted-foreground leading-relaxed mt-3">
-          From ski joring down Main Street to the legendary Polar Plunge, 
-          SNOWDOWN embodies the adventurous, slightly crazy spirit that 
-          defines Colorado mountain towns.
+          From skijoring down Main to the legendary polar plunge, SNOWDOWN 
+          has embodied the adventurous and daring spirit that defines Durango.
         </p>
       </div>
     </div>
