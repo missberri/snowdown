@@ -10,13 +10,25 @@ interface MapViewProps {
 const MapView = ({ selectedEventId, onEventSelect }: MapViewProps) => {
   const selectedEvent = events.find(e => e.id === selectedEventId);
 
-  // Simple static map representation for the downtown area
-  const mapLocations = events.map((event, index) => ({
-    ...event,
-    // Distribute pins across the visual map area
-    top: 20 + (index % 4) * 18,
-    left: 15 + (index % 3) * 25 + (index % 2) * 10,
-  }));
+  // Get unique locations and dedupe events at same location
+  const uniqueLocations = events.reduce((acc, event) => {
+    const existing = acc.find(e => e.location === event.location);
+    if (!existing) {
+      acc.push(event);
+    }
+    return acc;
+  }, [] as typeof events);
+
+  // Distribute pins more evenly across the map area
+  const mapLocations = uniqueLocations.map((event, index) => {
+    const row = Math.floor(index / 4);
+    const col = index % 4;
+    return {
+      ...event,
+      top: 15 + row * 20 + (col % 2) * 8,
+      left: 12 + col * 22,
+    };
+  });
 
   return (
     <div className="relative z-10 flex flex-col h-full px-4 pb-24">
@@ -60,28 +72,32 @@ const MapView = ({ selectedEventId, onEventSelect }: MapViewProps) => {
           const isSelected = selectedEventId === location.id;
           
           return (
-            <button
-              key={location.id}
-              onClick={() => onEventSelect(location.id)}
-              className={`absolute transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ${
-                isSelected ? 'z-20 scale-125' : 'z-10 hover:scale-110'
-              }`}
-              style={{
-                top: `${location.top}%`,
-                left: `${location.left}%`,
-              }}
-            >
-              <div className={`relative ${isSelected ? 'animate-pulse' : ''}`}>
-                <MapPin 
-                  className={`w-8 h-8 drop-shadow-lg ${
-                    isSelected ? 'text-primary fill-primary/30' : 'text-accent fill-accent/30'
-                  }`} 
-                />
-                {isSelected && (
-                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full animate-ping" />
-                )}
-              </div>
-            </button>
+              <button
+                key={location.id}
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onEventSelect(location.id);
+                }}
+                className={`absolute transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 cursor-pointer ${
+                  isSelected ? 'z-30 scale-125' : 'z-10 hover:scale-110 hover:z-20'
+                }`}
+                style={{
+                  top: `${location.top}%`,
+                  left: `${location.left}%`,
+                }}
+              >
+                <div className={`relative ${isSelected ? 'animate-pulse' : ''}`}>
+                  <MapPin 
+                    className={`w-8 h-8 drop-shadow-lg pointer-events-none ${
+                      isSelected ? 'text-primary fill-primary/30' : 'text-accent fill-accent/30'
+                    }`} 
+                  />
+                  {isSelected && (
+                    <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full animate-ping" />
+                  )}
+                </div>
+              </button>
           );
         })}
 
