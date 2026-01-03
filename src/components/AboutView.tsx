@@ -9,7 +9,7 @@ const AboutView = () => {
           <Snowflake className="w-10 h-10 text-accent-foreground" />
         </div>
         <h2 className="font-display text-3xl text-foreground mb-2">
-          About Snowdown
+          About SNOWDOWN
         </h2>
         <p className="text-muted-foreground">
           Celebrating Colorado Heritage Since 1979
@@ -65,7 +65,7 @@ const AboutView = () => {
           Our History
         </h3>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          Snowdown began in 1979 as Durango's answer to cabin fever. What 
+          SNOWDOWN began in 1979 as Durango's answer to cabin fever. What 
           started as a small community gathering has grown into Southwest 
           Colorado's most beloved winter festival. Each year features a 
           unique theme that brings out the creative spirit of locals and 
@@ -73,7 +73,7 @@ const AboutView = () => {
         </p>
         <p className="text-sm text-muted-foreground leading-relaxed mt-3">
           From ski joring down Main Street to the legendary Polar Plunge, 
-          Snowdown embodies the adventurous, slightly crazy spirit that 
+          SNOWDOWN embodies the adventurous, slightly crazy spirit that 
           defines Colorado mountain towns.
         </p>
       </div>
