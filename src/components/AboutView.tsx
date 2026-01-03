@@ -2,7 +2,7 @@ import { Mountain, Snowflake, Users, Calendar, MapPin } from 'lucide-react';
 
 const AboutView = () => {
   return (
-    <div className="relative z-10 px-4 pb-24 overflow-y-auto">
+    <div className="relative z-10 h-full overflow-y-auto px-4 pb-24">
       {/* Hero Section */}
       <div className="py-6 text-center">
         <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-accent mb-4">
