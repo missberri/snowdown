@@ -1,4 +1,4 @@
-import { Calendar, Clock, MapPin, Trophy, DollarSign, Users, ChevronDown, ChevronUp } from 'lucide-react';
+import { Calendar, Clock, MapPin, Trophy, DollarSign, Users, ChevronDown, ChevronUp, Heart } from 'lucide-react';
 import { Event } from '@/data/events';
 import { format, parseISO } from 'date-fns';
 
@@ -8,6 +8,8 @@ interface EventCardProps {
   isSelected?: boolean;
   fullDescription?: string;
   isDescriptionLoading?: boolean;
+  isLiked?: boolean;
+  onToggleLike?: (eventId: string) => void;
 }
 
 const EventCard = ({
@@ -16,11 +18,18 @@ const EventCard = ({
   isSelected,
   fullDescription,
   isDescriptionLoading,
+  isLiked = false,
+  onToggleLike,
 }: EventCardProps) => {
   const isAllWeek = event.date === 'all-week';
   const formattedDate = isAllWeek ? 'All Week' : format(parseISO(event.date), 'EEE, MMM d');
 
   const description = isSelected ? (fullDescription ?? event.description) : event.description;
+
+  const handleHeartClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    onToggleLike?.(event.id);
+  };
 
   return (
     <button
@@ -36,14 +45,30 @@ const EventCard = ({
         
         <div className="flex-1 min-w-0">
           <div className="flex items-start justify-between gap-2">
-            <h3 className="font-display text-lg text-foreground mb-1">
+            <h3 className="font-display text-lg text-foreground mb-1 flex-1">
               {event.title}
             </h3>
-            {isSelected ? (
-              <ChevronUp className="w-5 h-5 text-primary flex-shrink-0" />
-            ) : (
-              <ChevronDown className="w-5 h-5 text-muted-foreground flex-shrink-0" />
-            )}
+            <div className="flex items-center gap-1 flex-shrink-0">
+              <button
+                onClick={handleHeartClick}
+                className={`p-1.5 rounded-full transition-all duration-200 hover:scale-110 ${
+                  isLiked 
+                    ? 'text-red-500 hover:text-red-600' 
+                    : 'text-muted-foreground hover:text-red-400'
+                }`}
+                aria-label={isLiked ? 'Remove from my events' : 'Add to my events'}
+              >
+                <Heart 
+                  className="w-5 h-5" 
+                  fill={isLiked ? 'currentColor' : 'none'}
+                />
+              </button>
+              {isSelected ? (
+                <ChevronUp className="w-5 h-5 text-primary" />
+              ) : (
+                <ChevronDown className="w-5 h-5 text-muted-foreground" />
+              )}
+            </div>
           </div>
           
           <p className={`text-sm text-muted-foreground mb-3 ${isSelected ? '' : 'line-clamp-2'}`}>
