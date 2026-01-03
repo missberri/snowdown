@@ -6,11 +6,21 @@ interface EventCardProps {
   event: Event;
   onClick?: () => void;
   isSelected?: boolean;
+  fullDescription?: string;
+  isDescriptionLoading?: boolean;
 }
 
-const EventCard = ({ event, onClick, isSelected }: EventCardProps) => {
+const EventCard = ({
+  event,
+  onClick,
+  isSelected,
+  fullDescription,
+  isDescriptionLoading,
+}: EventCardProps) => {
   const isAllWeek = event.date === 'all-week';
   const formattedDate = isAllWeek ? 'All Week' : format(parseISO(event.date), 'EEE, MMM d');
+
+  const description = isSelected ? (fullDescription ?? event.description) : event.description;
 
   return (
     <button
@@ -37,8 +47,12 @@ const EventCard = ({ event, onClick, isSelected }: EventCardProps) => {
           </div>
           
           <p className={`text-sm text-muted-foreground mb-3 ${isSelected ? '' : 'line-clamp-2'}`}>
-            {event.description}
+            {description}
           </p>
+
+          {isSelected && isDescriptionLoading && (
+            <p className="text-xs text-muted-foreground mb-3">Loading full description…</p>
+          )}
           
           <div className="flex flex-wrap gap-3 text-xs">
             <div className="flex items-center gap-1 text-accent">
