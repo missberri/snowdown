@@ -14,6 +14,58 @@ interface MapViewProps {
 // Downtown Durango center coordinates
 const DURANGO_CENTER: [number, number] = [-107.8801, 37.2753];
 
+// Real coordinates for Durango venues (approximate positions along Main Ave)
+const venueCoordinates: Record<string, { lat: number; lng: number }> = {
+  "La Plata County": { lat: 37.2850, lng: -107.8750 },
+  "Durango Public Library - 1900 E 3rd Ave": { lat: 37.2746, lng: -107.8762 },
+  "Bark Bark - 634 Main Ste B": { lat: 37.2741, lng: -107.8800 },
+  "Pet Haus - 1444 Main": { lat: 37.2788, lng: -107.8803 },
+  "The Subterrain - 900 Main Ave": { lat: 37.2759, lng: -107.8806 },
+  "The Subterrain - 900 Main": { lat: 37.2759, lng: -107.8806 },
+  "Prohibition Herb - 1185 Camino Del Rio": { lat: 37.2720, lng: -107.8760 },
+  "Magpie's Newsstand & Café - 707 Main": { lat: 37.2746, lng: -107.8805 },
+  "Gazpacho New Mexican Restaurant - 431 E 2nd Ave": { lat: 37.2735, lng: -107.8785 },
+  "Gazpacho Restaurant - 431 E 2nd Ave": { lat: 37.2735, lng: -107.8785 },
+  "Gable House Bed and Breakfast Inn - 805 E 5th Ave": { lat: 37.2761, lng: -107.8770 },
+  "Gravity Lab - 732 CR 233": { lat: 37.2710, lng: -107.8830 },
+  "VFW - 1550 Main": { lat: 37.2795, lng: -107.8802 },
+  "Durango Dance - 3416 Main Ste 101": { lat: 37.2850, lng: -107.8795 },
+  "Starlight Lounge - 937 Main": { lat: 37.2762, lng: -107.8805 },
+  "Durango Beer and Ice Company - 3000 Main": { lat: 37.2835, lng: -107.8798 },
+  "Union Social House - 3062 Main": { lat: 37.2840, lng: -107.8796 },
+  "Black Heron Lounge - 726 Main": { lat: 37.2748, lng: -107.8804 },
+  "Durango Arts Center Theatre - 802 E 2nd Ave": { lat: 37.2738, lng: -107.8775 },
+  "EsoTerra Cider & Wines - 558 Main": { lat: 37.2738, lng: -107.8808 },
+  "8th Avenue Tavern - 509 E 8th Ave": { lat: 37.2773, lng: -107.8780 },
+  "Hermosa Cafe - 738 Main": { lat: 37.2749, lng: -107.8804 },
+  "Applebee's - 800 Camino Del Rio": { lat: 37.2715, lng: -107.8765 },
+  "Blue Rain Gallery - 934 Main": { lat: 37.2761, lng: -107.8806 },
+  "Four Leaves Winery - 528 Main": { lat: 37.2736, lng: -107.8809 },
+  "Guild House Games - 835 Main Ste 203": { lat: 37.2754, lng: -107.8806 },
+  "Office Depot - 331 S Camino Del Rio Ste D": { lat: 37.2700, lng: -107.8755 },
+  "Lizard Head Trading Company - 965 Main": { lat: 37.2764, lng: -107.8805 },
+  "Barons Creek Vineyards - 901 Main": { lat: 37.2758, lng: -107.8806 },
+  "11th Street Station - 1101 Main": { lat: 37.2775, lng: -107.8804 },
+  "Ska Brewing - 225 Girard": { lat: 37.2680, lng: -107.8730 },
+  "Animas Brewing Company - 802 E 2nd Ave": { lat: 37.2738, lng: -107.8778 },
+  "Buckley Park": { lat: 37.2745, lng: -107.8795 },
+  "Animas City Park - 3200 W 4th Ave": { lat: 37.2850, lng: -107.8880 },
+  "Town Plaza": { lat: 37.2752, lng: -107.8800 },
+  "Main Avenue": { lat: 37.2755, lng: -107.8803 },
+  "Toh-Atin Gallery - 145 W 9th St": { lat: 37.2778, lng: -107.8815 },
+  "The Nugget - 957 Main": { lat: 37.2763, lng: -107.8805 },
+  "Diamond Belle Saloon at Strater Hotel - 699 Main": { lat: 37.2744, lng: -107.8805 },
+  "El Moro - 945 Main": { lat: 37.2762, lng: -107.8805 },
+  "Lady Falconburgh's - 640 Main": { lat: 37.2742, lng: -107.8807 },
+  "DBC Annex - 2949 Main": { lat: 37.2832, lng: -107.8799 },
+  "The Roller Rink - 1215 Camino Del Rio": { lat: 37.2722, lng: -107.8758 },
+  "Powerhouse Science Center - 1333 Camino Del Rio": { lat: 37.2728, lng: -107.8752 },
+  "Transit Center - 250 W 8th St": { lat: 37.2770, lng: -107.8820 },
+  "Silverton Mountain Ski Area": { lat: 37.8850, lng: -107.6650 },
+  "Purgatory Resort": { lat: 37.6300, lng: -107.8140 },
+  "Hesperus Ski Area": { lat: 37.2950, lng: -108.0550 },
+};
+
 const MapView = ({ selectedEventId, onEventSelect }: MapViewProps) => {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
@@ -26,18 +78,21 @@ const MapView = ({ selectedEventId, onEventSelect }: MapViewProps) => {
 
   const selectedEvent = events.find(e => e.id === selectedEventId);
 
-  // Get unique locations with their events
+  // Get unique locations by name with their events
   const locationEvents = events.reduce((acc, event) => {
-    const key = `${event.coordinates.lat}-${event.coordinates.lng}`;
+    const key = event.location;
     if (!acc[key]) {
+      // Use venue coordinates if available, otherwise use event's original coordinates
+      const coords = venueCoordinates[event.location] || event.coordinates;
       acc[key] = {
-        coordinates: event.coordinates,
+        coordinates: coords,
+        location: event.location,
         events: [],
       };
     }
     acc[key].events.push(event);
     return acc;
-  }, {} as Record<string, { coordinates: { lat: number; lng: number }; events: typeof events }>);
+  }, {} as Record<string, { coordinates: { lat: number; lng: number }; location: string; events: typeof events }>);
 
   const handleSaveToken = () => {
     if (tokenInput.trim()) {
