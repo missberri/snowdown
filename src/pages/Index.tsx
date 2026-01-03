@@ -4,11 +4,14 @@ import Navigation from '@/components/Navigation';
 import ScheduleView from '@/components/ScheduleView';
 import MapView from '@/components/MapView';
 import AboutView from '@/components/AboutView';
+import MyEventsView from '@/components/MyEventsView';
 import SnowEffect from '@/components/SnowEffect';
+import { useLikedEvents } from '@/hooks/useLikedEvents';
 
 const Index = () => {
-  const [activeTab, setActiveTab] = useState<'schedule' | 'map' | 'about'>('schedule');
+  const [activeTab, setActiveTab] = useState<'schedule' | 'my-events' | 'map' | 'about'>('schedule');
   const [selectedEventId, setSelectedEventId] = useState<string | null>(null);
+  const { likedEventIds, toggleLike, isLiked, likedCount } = useLikedEvents();
 
   const handleEventSelect = (eventId: string) => {
     // Toggle selection - if clicking same event, deselect; otherwise select new one
@@ -27,6 +30,16 @@ const Index = () => {
             <ScheduleView 
               onEventSelect={handleEventSelect}
               selectedEventId={selectedEventId}
+              isLiked={isLiked}
+              onToggleLike={toggleLike}
+            />
+          )}
+          {activeTab === 'my-events' && (
+            <MyEventsView
+              likedEventIds={likedEventIds}
+              onToggleLike={toggleLike}
+              onEventSelect={handleEventSelect}
+              selectedEventId={selectedEventId}
             />
           )}
           {activeTab === 'map' && (
@@ -38,7 +51,7 @@ const Index = () => {
           {activeTab === 'about' && <AboutView />}
         </main>
         
-        <Navigation activeTab={activeTab} onTabChange={setActiveTab} />
+        <Navigation activeTab={activeTab} onTabChange={setActiveTab} likedCount={likedCount} />
       </div>
     </div>
   );

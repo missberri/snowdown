@@ -7,9 +7,11 @@ import { useEventFullDescription } from '@/hooks/useEventFullDescription';
 interface ScheduleViewProps {
   onEventSelect: (eventId: string) => void;
   selectedEventId: string | null;
+  isLiked: (eventId: string) => boolean;
+  onToggleLike: (eventId: string) => void;
 }
 
-const ScheduleView = ({ onEventSelect, selectedEventId }: ScheduleViewProps) => {
+const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike }: ScheduleViewProps) => {
   // Get unique dates from events
   const uniqueDates = [...new Set(events.map(e => e.date))].sort((a, b) => {
     if (a === 'all-week') return -1;
@@ -81,6 +83,8 @@ const ScheduleView = ({ onEventSelect, selectedEventId }: ScheduleViewProps) => 
                   isSelected={isSelected}
                   fullDescription={isSelected ? fullDescription ?? undefined : undefined}
                   isDescriptionLoading={isSelected ? fullDescriptionLoading : false}
+                  isLiked={isLiked(event.id)}
+                  onToggleLike={onToggleLike}
                 />
               </div>
             );
