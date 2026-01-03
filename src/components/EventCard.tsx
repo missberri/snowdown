@@ -1,4 +1,4 @@
-import { Calendar, Clock, MapPin, Trophy } from 'lucide-react';
+import { Calendar, Clock, MapPin, Trophy, DollarSign, Users, ChevronDown, ChevronUp } from 'lucide-react';
 import { Event } from '@/data/events';
 import { format, parseISO } from 'date-fns';
 
@@ -25,11 +25,18 @@ const EventCard = ({ event, onClick, isSelected }: EventCardProps) => {
         </div>
         
         <div className="flex-1 min-w-0">
-          <h3 className="font-display text-lg text-foreground mb-1 truncate">
-            {event.title}
-          </h3>
+          <div className="flex items-start justify-between gap-2">
+            <h3 className="font-display text-lg text-foreground mb-1">
+              {event.title}
+            </h3>
+            {isSelected ? (
+              <ChevronUp className="w-5 h-5 text-primary flex-shrink-0" />
+            ) : (
+              <ChevronDown className="w-5 h-5 text-muted-foreground flex-shrink-0" />
+            )}
+          </div>
           
-          <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
+          <p className={`text-sm text-muted-foreground mb-3 ${isSelected ? '' : 'line-clamp-2'}`}>
             {event.description}
           </p>
           
@@ -49,6 +56,24 @@ const EventCard = ({ event, onClick, isSelected }: EventCardProps) => {
               <span>{event.location}</span>
             </div>
           </div>
+
+          {/* Expanded details when selected */}
+          {isSelected && (
+            <div className="mt-4 pt-3 border-t border-border/50 space-y-2 animate-fade-in">
+              {event.cost && (
+                <div className="flex items-center gap-2 text-sm">
+                  <DollarSign className="w-4 h-4 text-accent" />
+                  <span className="text-foreground">{event.cost}</span>
+                </div>
+              )}
+              {event.ageRestriction && (
+                <div className="flex items-center gap-2 text-sm">
+                  <Users className="w-4 h-4 text-secondary" />
+                  <span className="text-foreground">{event.ageRestriction}</span>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </button>
