@@ -11,7 +11,9 @@ const Index = () => {
   const [selectedEventId, setSelectedEventId] = useState<string | null>(null);
 
   const handleEventSelect = (eventId: string) => {
-    setSelectedEventId(eventId);
+    // Toggle selection - if clicking same event, deselect; otherwise select new one
+    setSelectedEventId(prev => prev === eventId ? null : eventId);
+    console.log('Event selected:', eventId);
   };
 
   return (
