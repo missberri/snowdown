@@ -49,8 +49,8 @@ const AboutView = () => {
         </div>
         <div className="glass-card rounded-xl p-4 text-center">
           <Users className="w-6 h-6 text-primary mx-auto mb-2" />
-          <p className="font-display text-lg text-foreground">10,000+</p>
-          <p className="text-xs text-muted-foreground">Annual Visitors</p>
+          <p className="font-display text-lg text-foreground">200+</p>
+          <p className="text-xs text-muted-foreground">Events</p>
         </div>
         <div className="glass-card rounded-xl p-4 text-center">
           <Mountain className="w-6 h-6 text-pine mx-auto mb-2" />
