@@ -72,7 +72,7 @@ const venueCoordinates: Record<string, { lat: number; lng: number }> = {
   "Purgatory Resort": { lat: 37.6293281828919, lng: -107.81108499873797 },
   "Zia Cantina - 2977 Main Ave": { lat: 37.29749453326957, lng: -107.87216715061325 },
   "Prohibition Herb - 1185 Camino Del Rio": { lat: 37.276872766287546, lng: -107.88163727518943 },
-  "Confluence Park - 100 Confluence Avenue": { lat: 37.330856611513994, lng: -107.84179705504657 },
+  "Confluence Park - 100 Confluence Avenue": { lat: 37.23817431729288, lng: -107.82094057263072 },
   "San Juan Angler - 600 Main Ave, Ste 202": { lat: 37.27053909137122, lng: -107.88080277760301 },
   "J Bo's Pizza - 1301 Florida Rd, Unit E": { lat: 37.29669350774901, lng: -107.85336733101217 },
   "D&SNG Museum - 479 Main Ave": { lat: 37.26838038169863, lng: -107.88227053286037 },
