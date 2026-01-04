@@ -3,6 +3,8 @@ import { events } from '@/data/events';
 import EventCard from './EventCard';
 import { format, parseISO } from 'date-fns';
 import { useEventFullDescription } from '@/hooks/useEventFullDescription';
+import { Input } from '@/components/ui/input';
+import { Search, X } from 'lucide-react';
 
 interface ScheduleViewProps {
   onEventSelect: (eventId: string) => void;
@@ -12,6 +14,8 @@ interface ScheduleViewProps {
 }
 
 const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike }: ScheduleViewProps) => {
+  const [searchQuery, setSearchQuery] = useState('');
+
   // Get unique dates from events
   const uniqueDates = [...new Set(events.map(e => e.date))].sort((a, b) => {
     if (a === 'all-week') return -1;
@@ -21,7 +25,21 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike }:
 
   const [activeDate, setActiveDate] = useState(uniqueDates[0] || 'all-week');
 
-  const filteredEvents = events.filter((e) => e.date === activeDate);
+  // Filter events by search query and date
+  const filteredEvents = useMemo(() => {
+    let filtered = events.filter((e) => e.date === activeDate);
+    
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase().trim();
+      filtered = events.filter((e) => 
+        e.title.toLowerCase().includes(query) ||
+        e.location.toLowerCase().includes(query) ||
+        e.description.toLowerCase().includes(query)
+      );
+    }
+    
+    return filtered;
+  }, [activeDate, searchQuery]);
 
   const selectedEvent = useMemo(
     () => (selectedEventId ? events.find((e) => e.id === selectedEventId) ?? null : null),
@@ -39,32 +57,62 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike }:
     }
   };
 
+  const isSearching = searchQuery.trim().length > 0;
+
   return (
     <div className="relative z-10 flex flex-col h-full">
-      {/* Day Filter */}
-      <div className="px-4 py-3 overflow-x-auto scrollbar-hide">
-        <div className="flex gap-2">
-          {uniqueDates.map((date) => (
+      {/* Search Bar */}
+      <div className="px-4 pt-3">
+        <div className="relative">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <Input
+            type="text"
+            placeholder="Search events..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="pl-9 pr-9 bg-muted/50 border-muted"
+          />
+          {searchQuery && (
             <button
-              key={date}
-              onClick={() => setActiveDate(date)}
-              className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeDate === date
-                  ? 'bg-gradient-accent text-accent-foreground shadow-glow'
-                  : 'bg-muted text-muted-foreground hover:bg-muted/80'
-              }`}
+              onClick={() => setSearchQuery('')}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
             >
-              {formatDateTab(date)}
+              <X className="h-4 w-4" />
             </button>
-          ))}
+          )}
         </div>
       </div>
+
+      {/* Day Filter - hide when searching */}
+      {!isSearching && (
+        <div className="px-4 py-3 overflow-x-auto scrollbar-hide">
+          <div className="flex gap-2">
+            {uniqueDates.map((date) => (
+              <button
+                key={date}
+                onClick={() => setActiveDate(date)}
+                className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  activeDate === date
+                    ? 'bg-gradient-accent text-accent-foreground shadow-glow'
+                    : 'bg-muted text-muted-foreground hover:bg-muted/80'
+                }`}
+              >
+                {formatDateTab(date)}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Events List */}
       <div className="flex-1 overflow-y-auto px-4 pb-24">
         <div className="sticky top-0 bg-background/80 backdrop-blur-sm py-2 mb-3 z-10">
           <h2 className="font-display text-xl text-accent">
-            {activeDate === 'all-week' ? 'All Week Events' : format(parseISO(activeDate), 'EEEE, MMMM d')}
+            {isSearching 
+              ? `${filteredEvents.length} result${filteredEvents.length !== 1 ? 's' : ''} for "${searchQuery}"`
+              : activeDate === 'all-week' 
+                ? 'All Week Events' 
+                : format(parseISO(activeDate), 'EEEE, MMMM d')}
           </h2>
         </div>
         
@@ -89,6 +137,9 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike }:
               </div>
             );
           })}
+          {filteredEvents.length === 0 && (
+            <p className="text-center text-muted-foreground py-8">No events found</p>
+          )}
         </div>
       </div>
     </div>
