@@ -1639,7 +1639,7 @@ export const events: Event[] = [
   },
   {
     id: 'fri30-17',
-    title: 'Boomer Hot Dog Show & Gen-Z/Millenial Rail Jam',
+    title: 'Boomer Hot Dog Show, Gen-X Ski Ballet & Gen-Z/Millenial Rail Jam',
     description: 'Skiers and snowboarders compete on technical ability, style, and variety. Ages 14 and over, cap of 40.',
     date: '2026-01-30',
     time: '7:00 PM - 9:00 PM',
