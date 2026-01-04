@@ -76,6 +76,17 @@ const AboutView = () => {
           has embodied the adventurous and daring spirit that defines Durango.
         </p>
       </div>
+
+      {/* Footer */}
+      <div className="text-center py-6 text-sm text-muted-foreground">
+        <p>Built with ❤️ by Sheri Baucom</p>
+        <p className="mt-1">
+          Questions or Comments?{' '}
+          <a href="mailto:sheri@snowdown.org" className="text-accent hover:underline">
+            sheri@snowdown.org
+          </a>
+        </p>
+      </div>
     </div>
   );
 };
