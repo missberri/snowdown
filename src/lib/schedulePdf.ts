@@ -68,7 +68,8 @@ export async function getEventFullDescription(params: {
 
     // Ensure the location is near the title (same event block)
     if (locIdx !== -1 && locIdx - idx < 500) {
-      const start = locIdx + locNeedle.length;
+      // Start right after the title (some events include the location inside the description)
+      const start = idx + titleNeedle.length;
 
       const endCandidates = [
         upper.indexOf('EVENT COORDINATOR', start),
@@ -80,7 +81,16 @@ export async function getEventFullDescription(params: {
       const end = Math.min(...endCandidates);
       const raw = text.slice(start, end);
 
-      const cleaned = collapseWhitespace(raw);
+      let cleaned = collapseWhitespace(raw);
+
+      // If the extracted block begins with the location (common in the PDF), strip it.
+      if (cleaned.toUpperCase().startsWith(locNeedle)) {
+        cleaned = cleaned.slice(locNeedle.length).trim();
+      }
+
+      // Avoid returning fragments like ", the Silver Bullet awaits."
+      cleaned = cleaned.replace(/^[,.;:–—\-\s]+/, '').trim();
+
       return cleaned || null;
     }
 
