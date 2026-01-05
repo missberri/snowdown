@@ -2420,6 +2420,18 @@ export const events: Event[] = [
     ageRestriction: '18+',
   },
   {
+    id: 'sat31-29b',
+    title: 'Name That Tune Bingo',
+    description: 'See SATURDAY, Jan 24, 6 PM for details.',
+    date: '2026-01-31',
+    time: '6:00 PM',
+    location: 'Barons Creek Vineyards - 901 Main',
+    category: 'entertainment',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
+  {
     id: 'sat31-30',
     title: 'Human Hungry Hippo',
     description: 'The classic tabletop game, now human-sized! Teams of two collect the most balls. Sign-ups at 5 PM.',
