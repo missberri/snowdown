@@ -55,6 +55,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Join us at The ACT for our Pop Darts tournament! What are Pop Darts? Proof that Durango will make a SNOWDOWN event out of anything. Twelve teams of two compete for a chance to win one of three great prizes awarded to the top 3 teams. Must 21+.",
   'Pinball Tournament':
     "A bona fide pinball tournament sponsored by the International Pinball Flipper Association. Format will be 3 strikes, you're out! The winner? The one who survives the chaos with the most points and the least wrist cramps. Prizes for 1st, 2nd, 3rd, and Best Costume. All ages welcome!",
+  'Rocky Mountain Mystics Living Tarot':
+    "Spend an evening with the Rocky Mountain Mystics Living Tarot Troupe! Immerse yourself in an interactive performance where each card is brought to life. As with Tarot readings, each performance is different, as the cards pulled by audience members result in a unique, personal reading performed by our troupe of silly mediums. Must be 21+.",
 };
 
 async function extractScheduleText(): Promise<string> {
