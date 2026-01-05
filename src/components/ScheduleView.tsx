@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { events } from '@/data/events';
 import EventCard from './EventCard';
 import { format, parseISO } from 'date-fns';
-import { useEventFullDescription } from '@/hooks/useEventFullDescription';
+
 import { Input } from '@/components/ui/input';
 import { Search, X } from 'lucide-react';
 
@@ -41,12 +41,6 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike }:
     return filtered;
   }, [activeDate, searchQuery]);
 
-  const selectedEvent = useMemo(
-    () => (selectedEventId ? events.find((e) => e.id === selectedEventId) ?? null : null),
-    [selectedEventId]
-  );
-
-  const { fullDescription, loading: fullDescriptionLoading } = useEventFullDescription(selectedEvent);
 
   const formatDateTab = (date: string) => {
     if (date === 'all-week') return 'All Week';
@@ -129,8 +123,6 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike }:
                   event={event}
                   onClick={() => onEventSelect(event.id)}
                   isSelected={isSelected}
-                  fullDescription={isSelected ? fullDescription ?? undefined : undefined}
-                  isDescriptionLoading={isSelected ? fullDescriptionLoading : false}
                   isLiked={isLiked(event.id)}
                   onToggleLike={onToggleLike}
                 />

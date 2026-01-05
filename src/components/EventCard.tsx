@@ -6,8 +6,6 @@ interface EventCardProps {
   event: Event;
   onClick?: () => void;
   isSelected?: boolean;
-  fullDescription?: string;
-  isDescriptionLoading?: boolean;
   isLiked?: boolean;
   onToggleLike?: (eventId: string) => void;
 }
@@ -16,17 +14,13 @@ const EventCard = ({
   event,
   onClick,
   isSelected,
-  fullDescription,
-  isDescriptionLoading,
   isLiked = false,
   onToggleLike,
 }: EventCardProps) => {
   const isAllWeek = event.date === 'all-week';
   const formattedDate = isAllWeek ? 'All Week' : format(parseISO(event.date), 'EEE, MMM d');
 
-  const description = isSelected && fullDescription && fullDescription.length > event.description.length
-    ? fullDescription
-    : event.description;
+  const description = event.description;
 
   const handleHeartClick = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -77,9 +71,6 @@ const EventCard = ({
             {description}
           </p>
 
-          {isSelected && isDescriptionLoading && (
-            <p className="text-xs text-muted-foreground mb-3">Loading full description…</p>
-          )}
           
           <div className="flex flex-wrap gap-3 text-xs">
             <div className="flex items-center gap-1 text-accent">
