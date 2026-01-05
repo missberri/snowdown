@@ -825,7 +825,7 @@ export const events: Event[] = [
   },
   {
     id: 'wed28-2',
-    title: "Snowdown Fashion Do's and Dont's",
+    title: "SNOWDOWN Fashion Do's and Dont's",
     description: 'Our elite models display why Durango was voted "Worst Dressed Community." Doors open 11 AM, lunch 11:30 AM, show 12:30 PM.',
     date: '2026-01-28',
     time: '12:00 PM',
@@ -2017,7 +2017,7 @@ export const events: Event[] = [
   },
   {
     id: 'sat31-22',
-    title: "Snowdown Fashion Do's and Don'ts Videocast",
+    title: "SNOWDOWN Fashion Do's and Don'ts Videocast",
     description: 'Second chance to catch the dazzling Fashion Do\'s and Don\'ts! Tickets at AnimasCityTheatre.com.',
     date: '2026-01-31',
     time: '4:00 PM',
