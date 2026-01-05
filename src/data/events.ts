@@ -2139,7 +2139,7 @@ export const events: Event[] = [
   {
     id: 'sun1-2',
     title: 'Build-A-Bong Awards',
-    description: 'See ALL WEEK for details.',
+    description: 'Awards for the Build A Bong Contest.',
     date: '2026-02-01',
     time: '4:20 PM',
     location: 'Prohibition Herb - 1185 Camino Del Rio',
