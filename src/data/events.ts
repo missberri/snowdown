@@ -1616,7 +1616,7 @@ export const events: Event[] = [
   },
   {
     id: 'fri30-15',
-    title: 'Snowdown Light Parade',
+    title: 'SNOWDOWN Light Parade',
     description: "Durango's only nighttime parade! Brightly lit floats light up Main Avenue celebrating 150 years of Colorado statehood.",
     date: '2026-01-30',
     time: '6:00 PM',
