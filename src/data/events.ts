@@ -850,7 +850,7 @@ export const events: Event[] = [
   {
     id: 'wed28-4',
     title: "What's Crackin' Lego Walk",
-    description: 'Sprint barefoot across a minefield of Legos in a timed race!',
+    description: "Sprint barefoot across a minefield of Legos in a timed race! More fun than blowing out 150 Colorado birthday cake candles. No need to panic, it's over in a jiffy. Must be 18+.",
     date: '2026-01-28',
     time: '3:00 PM',
     location: '11th Street Station - 1101 Main',
