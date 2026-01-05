@@ -61,6 +61,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "We're bringing a Colorado rodeo tradition indoors with a riding contest more challenging than navigating Red Mountain pass during a blizzard. $250, $100, and $50 cash prizes for 1st, 2nd, and 3rd. Must be 18+.",
   'Mah Jongg Tournament':
     "Colorado might've already been on the map before American Mah Jongg hit the scene in the early 1900s, but recently, the popularity has soared! We'll follow the National Mah Jongg League (NMJL) rules, which use the NMJL card. Bring your 2025 NMJL card, but leave your quarters at home. We will track points and award cash prizes to the winners. Costumes encouraged. Please sign up by 5 PM on Tues, Jan 29. All ages welcome, but you must already know how to play American Mah Jongg.",
+  'Name That Tune':
+    "From John Denver to today's hits, test your music knowledge in this fast-paced guessing game! Contestants will be given clips of songs to listen to, then asked to identify both the song and the artist. Each correct answer earns one point. Highest point total wins! Sign up 15 minutes before the event starts. Must be 21+.",
 };
 
 async function extractScheduleText(): Promise<string> {
