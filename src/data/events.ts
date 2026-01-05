@@ -2573,6 +2573,18 @@ export const events: Event[] = [
     cost: 'Free',
     ageRestriction: '21+',
   },
+  {
+    id: 'sat31-40',
+    title: 'Best Chest in the West',
+    description: "Step right up, sugar, and strut your stuff in the Best Chest in the West Contest, open to gents and gals alike! Show off your strength, your style, and your finest assets, whether you're a gym regular, a bodybuilder, or just naturally well-endowed. Judges will be looking for presentation, flair, and overall creativity, with extra points for charm, charisma, and confidence. Bring your sass, your sparkle, (and your pasties?) for the win! A $50 bar tab, $25 bar tab, and a free drink for 1st, 2nd, and 3rd place. Must be 21+.",
+    date: '2026-01-31',
+    time: '11:00 PM',
+    location: 'Starlight Lounge - 937 Main',
+    category: 'competition',
+    coordinates: { lat: 37.2756, lng: -107.8807 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
 
   // SUNDAY, FEBRUARY 1
   {
