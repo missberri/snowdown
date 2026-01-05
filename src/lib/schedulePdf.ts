@@ -107,6 +107,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "See All Week for more details.",
   'Gen Alpha/Beta Railjam':
     "See FRIDAY, Jan 30, 7 PM for more details. Ages 13 and under, with a participant cap of 40.",
+  'Battle of the Bands':
+    "Crank up the amps and hit the stage for the ultimate Battle of the Bands! You've got 45 minutes to blow the judges away and ignite the crowd. The fans will vote for their favorite act, so make sure your groupies are there to cheer you on. Sign up by Sat, Jan 24. More info on the Durango Legion website. Under 18 with a parent allowed till 10 PM.",
 };
 
 async function extractScheduleText(): Promise<string> {
