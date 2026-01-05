@@ -47,6 +47,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "See FRIDAY, Jan 23, 5 PM for details.",
   "Carver Brewing's Beer Dinner":
     "Better hop to it! What better way to celebrate SNOWDOWN 2026 than with a dinner of sesquicentennial-themed food and Carver's craft beer pairings! Purchase tickets in advance at CarverBrewing.com. Must be 21+.",
+  'Scavenger Hunt':
+    "The original SNOWDOWN Scavenger Hunt is back! This ain't our first rodeo, but it could be yours. Judging will take place on Fri, Jan 30 at 10 AM. Must be 21+.",
 };
 
 async function extractScheduleText(): Promise<string> {
