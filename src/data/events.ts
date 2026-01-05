@@ -2006,6 +2006,18 @@ export const events: Event[] = [
     cost: '$5 cover',
     ageRestriction: '18+',
   },
+  {
+    id: 'fri30-27',
+    title: 'Karaoke Contest',
+    description: 'See FRIDAY, Jan 23, 10 PM for details.',
+    date: '2026-01-30',
+    time: '10:00 PM',
+    location: '8th Avenue Tavern - 509 E 8th Ave',
+    category: 'competition',
+    coordinates: { lat: 37.2780, lng: -107.8795 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
 
   // SATURDAY, JANUARY 31
   {
