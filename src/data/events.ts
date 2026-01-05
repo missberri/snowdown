@@ -1395,7 +1395,7 @@ export const events: Event[] = [
   {
     id: 'thu29-11',
     title: 'Cards Against SNOWDOWN',
-    description: 'The most offensive Coloradan game! No game for the faint of heart.',
+    description: "Ready to prove you're the most offensive Coloradan in the room? Join us and play through several rounds of this jaw-dropping, stomach-churning, boundary-shattering card game! We take pride in flaunting that this is no game for the faint of heart. Must be 18+.",
     date: '2026-01-29',
     time: '5:00 PM',
     location: 'VFW - 1550 Main',
