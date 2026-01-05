@@ -67,6 +67,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Join us in celebrating 34 years of La Plata Open Space Conservancy at our annual SNOWDOWN fundraiser! Cocktails for Conservation is one of Snowdown's premier events and LPOSC's largest fundraiser. Each ticket include complimentary cocktails, wines, fine foods, local brews, silent auction, and a museum scavenger hunt with prizes! All proceeds from this popular event support LPOSC's work to conserve our cherished landscapes and natural resources. All proceeds support LPOSC's work to conserve our cherished landscapes and natural resources, protecting our unique way of life in Southwest Colorado—then and WOW! Ticket and sponsorship details found at www.lposc.org. Must be 21+.",
   'Connect 4':
     "What starts as a classic game of Connect 4 may turn into an outright Hootenanny. Let's hope, at least. Come one, come all! Must be 21+.",
+  'Paint the Peaks & Colorado Trivia':
+    "Paint a scenic mountain range, guided step by step. Between brushstrokes, test your Colorado trivia knowledge! Register on Eventbrite.",
 };
 
 async function extractScheduleText(): Promise<string> {
