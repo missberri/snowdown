@@ -2115,6 +2115,18 @@ export const events: Event[] = [
     ageRestriction: '21+',
   },
   {
+    id: 'sat31-5b',
+    title: 'How Well Do You Know (Y)Our Wine?',
+    description: 'See SATURDAY, Jan 25, 12 PM for details.',
+    date: '2026-01-31',
+    time: '12:00 PM - 7:00 PM',
+    location: 'Four Leaves Winery - 528 Main',
+    category: 'activity',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
+  {
     id: 'sat31-6',
     title: 'Blender Bean Battle',
     description: 'Bring your secret iced coffee recipe and craft a cup that will blow judges\' minds! Bonus points for cleverest name.',
