@@ -97,6 +97,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Hosted by Star Liquor, this is the event your liver has been waiting for. Fun? You're bloody right! Bring your signature Bloody Mary ingredients. Ice, cups, and vodka will be provided to all our mixologists. The tastiest cocktail and the best presentation (booth and costume) win! See SNOWDOWN.org for entry details. Must be 21+.",
   'SNOWDOWN Chili Cook Off':
     "Step right up to the Chuck Wagon Chili Roundup, where the finest chili cooks in the territory roll into town to show what they've got simmering in their pots. The cookfires and booth fixin' begin at sun-up, 7 AM sharp. At 10:30 AM, the judges ride in for the official tasting. At high noon, tasting cups go on sale, so grab one and mosey your way through the wagons to cast your vote for the People's Choice! Bring your appetite and your frontier spirit! See SNOWDOWN.org for entry details. All ages welcome!",
+  "Hobby Horsin' Around for Kids":
+    "Saddle up, partners! Grab your trusty hobby horse and race across the DoubleTree corral in our first-ever Steeple Chase showdown for kids. Teams of two will leap over hurdles, dodge waterin' holes, and wrangle through obstacles in a test of speed, agility, and cowboy spirit. Be the first to cross the finish line without losin' yer hat or yer nerve, and ride off as the Steeple Chase Champion! Sign-ups start at 2:30 PM. Ages 3–17.",
 };
 
 async function extractScheduleText(): Promise<string> {
