@@ -2514,6 +2514,18 @@ export const events: Event[] = [
     cost: 'Free',
     ageRestriction: '21+',
   },
+  {
+    id: 'sat31-35',
+    title: 'Giant Beer Pong',
+    description: "This isn't your average backyard game; our giant cups and supersized table turn beer pong into a full-on mountain-sized match. Team up, line up your shots, and launch those balls with precision as you compete for glory and bragging rights. Who will yodel from the top of Pikes Peak and claim victory in the Giant Beer Pong Games? A $50 bar tab, $25 bar tab, and a free drink for 1st, 2nd, and 3rd place. Must be 21+.",
+    date: '2026-01-31',
+    time: '8:00 PM',
+    location: 'Starlight Lounge - 937 Main',
+    category: 'competition',
+    coordinates: { lat: 37.2756, lng: -107.8807 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
 
   // SUNDAY, FEBRUARY 1
   {
