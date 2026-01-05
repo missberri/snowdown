@@ -2304,7 +2304,7 @@ export const events: Event[] = [
   {
     id: 'sat31-21',
     title: "Hobby Horsin' Around for Kids!",
-    description: 'Steeple Chase showdown! Teams of two leap over hurdles, dodge obstacles. Sign-ups at 2:30 PM. Ages 3-17.',
+    description: "Saddle up, partners! Grab your trusty hobby horse and race across the DoubleTree corral in our first-ever Steeple Chase showdown for kids. Teams of two will leap over hurdles, dodge waterin' holes, and wrangle through obstacles in a test of speed, agility, and cowboy spirit. Be the first to cross the finish line without losin' yer hat or yer nerve, and ride off as the Steeple Chase Champion! Sign-ups start at 2:30 PM. Ages 3–17.",
     date: '2026-01-31',
     time: '3:00 PM',
     location: 'Doubletree Grand Ballroom - 501 Camino Del Rio',
