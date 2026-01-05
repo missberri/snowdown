@@ -117,6 +117,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Ready to prove you're the most offensive Coloradan in the room? Join us and play through several rounds of this jaw-dropping, stomach-churning, boundary-shattering card game! We take pride in flaunting that this is no game for the faint of heart. Must be 18+.",
   "Scavenger Hunt Judging":
     "See WEDNESDAY, Jan 28, 12 PM for details.",
+  "Best Chest in the West":
+    "Step right up, sugar, and strut your stuff in the Best Chest in the West Contest, open to gents and gals alike! Show off your strength, your style, and your finest assets, whether you're a gym regular, a bodybuilder, or just naturally well-endowed. Judges will be looking for presentation, flair, and overall creativity, with extra points for charm, charisma, and confidence. Bring your sass, your sparkle, (and your pasties?) for the win! A $50 bar tab, $25 bar tab, and a free drink for 1st, 2nd, and 3rd place. Must be 21+.",
 };
 
 async function extractScheduleText(): Promise<string> {
