@@ -1453,7 +1453,7 @@ export const events: Event[] = [
   {
     id: 'fri30-1',
     title: 'SNOWDOWN T-Shirt Day',
-    description: "Don your official SNOWDOWN 2026-themed shirt. Stop at Magpie's for your button, hat, shirt, and poster!",
+    description: "SNOWDOWN is all about how the West was fun, and it's time to don your official SNOWDOWN 2026-themed shirt. No merch, you say? We got you covered! Stop at Magpie's for your button, hat, shirt, and poster. Get in the spirit and stake your little claim in history!",
     date: '2026-01-30',
     time: 'All Day',
     location: "Magpie's Newsstand & Café - 707 Main",
