@@ -885,7 +885,7 @@ export const events: Event[] = [
   {
     id: 'wed28-7',
     title: 'Family Feud',
-    description: 'We asked 100 Durango locals the most pressing questions. 8 teams of 4 compete! Sign up by Mon, Jan 26.',
+    description: "We asked 100 Durango locals the most pressing questions of our time, and you know what they said? You'll have to come and find out! A classic game of Family Feud where 8 teams of 4 will compete for the right to say, \"I know how Durangoans (Durangatangs?) think!\" Sign up by Mon, Jan 26. Must be 21+.",
     date: '2026-01-28',
     time: '5:00 PM',
     location: 'Anarchy Brewing - 225 E 8th Ave Unit C',
