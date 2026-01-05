@@ -1794,6 +1794,17 @@ export const events: Event[] = [
     cost: '$10, $5 for kids 10 and under',
   },
   {
+    id: 'fri30-11b',
+    title: 'High Altitude Flow & Beats',
+    description: 'See FRIDAY, Jan 23, 5 PM for details.',
+    date: '2026-01-30',
+    time: '5:00 PM',
+    location: 'Gravity Lab - 732 CR 233',
+    category: 'activity',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+  },
+  {
     id: 'fri30-12',
     title: 'Kid Joke Jam',
     description: 'Young comedians take the spotlight with one-liner jokes! Charming, goofy, and guaranteed to brighten your day.',
