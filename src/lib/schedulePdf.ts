@@ -99,6 +99,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Step right up to the Chuck Wagon Chili Roundup, where the finest chili cooks in the territory roll into town to show what they've got simmering in their pots. The cookfires and booth fixin' begin at sun-up, 7 AM sharp. At 10:30 AM, the judges ride in for the official tasting. At high noon, tasting cups go on sale, so grab one and mosey your way through the wagons to cast your vote for the People's Choice! Bring your appetite and your frontier spirit! See SNOWDOWN.org for entry details. All ages welcome!",
   "Hobby Horsin' Around for Kids":
     "Saddle up, partners! Grab your trusty hobby horse and race across the DoubleTree corral in our first-ever Steeple Chase showdown for kids. Teams of two will leap over hurdles, dodge waterin' holes, and wrangle through obstacles in a test of speed, agility, and cowboy spirit. Be the first to cross the finish line without losin' yer hat or yer nerve, and ride off as the Steeple Chase Champion! Sign-ups start at 2:30 PM. Ages 3–17.",
+  "Hobby Horsin' Around for Adults":
+    "Adult version of Hobby Horsin'. No, not like that - get your mind out of the gutter! Must be 21+ to ride this ride. See SATURDAY, Jan 31, 3 PM for more details.",
 };
 
 async function extractScheduleText(): Promise<string> {
