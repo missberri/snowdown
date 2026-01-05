@@ -739,6 +739,18 @@ export const events: Event[] = [
     cost: 'Free',
     ageRestriction: '21+',
   },
+  {
+    id: 'mon26-7',
+    title: "Carver Brewing's Beer Dinner",
+    description: 'See MONDAY, 5 PM for details.',
+    date: '2026-01-26',
+    time: '7:30 PM',
+    location: 'Carver Brewing Company - 1022 Main',
+    category: 'entertainment',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: '$75',
+    ageRestriction: '21+',
+  },
 
   // TUESDAY, JANUARY 27
   {
