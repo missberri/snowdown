@@ -527,7 +527,7 @@ export const events: Event[] = [
   },
   {
     id: 'sun25-5',
-    title: 'Snowdown Ski Parade & Opening Ceremony',
+    title: 'SNOWDOWN Ski Parade & Opening Ceremony',
     description: 'Saddle up your skis for a rootin\'-tootin\' kickoff! Costumes encouraged. Meet at the Beach at 12:15 PM; parade starts at 1 PM. 2027 theme announced after!',
     date: '2026-01-25',
     time: '1:00 PM',
