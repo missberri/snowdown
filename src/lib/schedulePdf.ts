@@ -115,6 +115,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Behold, as our elite models display why Durango was voted \"Worst Dressed Community\" by USA Today. This isn't the boardwalk, honey, it's the catwalk! Strut your stuff like famed Colorado gambler Poker Alice owes you money, and be ready for some bawdy but good-humored entertainment. Doors open at 11 AM. Lunch for seated guests begins at 11:30 AM, and the show starts at 12:30 PM. Cash bar. See SNOWDOWN.org for entry details. Prizes awarded for Best Dressed. Must be 21+.",
   "Cards Against SNOWDOWN":
     "Ready to prove you're the most offensive Coloradan in the room? Join us and play through several rounds of this jaw-dropping, stomach-churning, boundary-shattering card game! We take pride in flaunting that this is no game for the faint of heart. Must be 18+.",
+  "Scavenger Hunt Judging":
+    "See WEDNESDAY, Jan 28, 12 PM for details.",
 };
 
 async function extractScheduleText(): Promise<string> {
