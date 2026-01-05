@@ -1486,6 +1486,18 @@ export const events: Event[] = [
     ageRestriction: '21+',
   },
   {
+    id: 'thu29-16d',
+    title: 'Hungry Hungry Sliders',
+    description: 'Did you know the cheeseburger was invented in Denver and trademarked in 1935? Limited seats at this speed eating, single elimination eating competition featuring the most delicious sliders from Backcountry Gourmet. Come with an empty belly and make it to the final three standing for the grand prize! These sliders will be even better. Must be 18+.',
+    date: '2026-01-29',
+    time: '6:00 PM',
+    location: '11th Street Station - 1101 Main',
+    category: 'competition',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+    ageRestriction: '18+',
+  },
+  {
     id: 'thu29-17',
     title: 'Beer Pong',
     description: '64-team bracket, double elimination with traditional rules. Sign up 30 minutes before.',
