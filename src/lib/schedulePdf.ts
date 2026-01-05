@@ -71,10 +71,20 @@ export async function getEventFullDescription(params: {
       // Start right after the title (some events include the location inside the description)
       const start = idx + titleNeedle.length;
 
-      const endCandidates = [
+      const endCandidates: number[] = [
         upper.indexOf('EVENT COORDINATOR', start),
         upper.indexOf('ENTRY COST', start),
       ].filter((i) => i !== -1);
+
+      // Some events have clear end markers inside the description itself.
+      // If present, prefer truncating at that point (including punctuation).
+      const allAgesIdx = upper.indexOf('ALL AGES WELCOME', start);
+      if (allAgesIdx !== -1) {
+        let endIdx = allAgesIdx + 'ALL AGES WELCOME'.length;
+        const nextChar = upper[endIdx];
+        if (nextChar === '!' || nextChar === '.') endIdx += 1;
+        endCandidates.push(endIdx);
+      }
 
       if (!endCandidates.length) return null;
 
