@@ -1498,6 +1498,18 @@ export const events: Event[] = [
     ageRestriction: '18+',
   },
   {
+    id: 'thu29-16e',
+    title: 'Champagne Pong',
+    description: 'Aww, Champagne; so much more appropo for our classy little town! Teams of 2 will face off in a single-elimination tournament to get the ping pong ball into the champagne glass. Sign-ups start at 5 PM. Must be 21+.',
+    date: '2026-01-29',
+    time: '6:00 PM',
+    location: 'Animas River Lounge at the DoubleTree - 501 Camino del Rio',
+    category: 'competition',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: '$10',
+    ageRestriction: '21+',
+  },
+  {
     id: 'thu29-17',
     title: 'Beer Pong',
     description: '64-team bracket, double elimination with traditional rules. Sign up 30 minutes before.',
