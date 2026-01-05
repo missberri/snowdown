@@ -2122,6 +2122,20 @@ export const events: Event[] = [
     cost: 'Varies',
     ageRestriction: '18+',
   },
+
+  // SUNDAY, FEBRUARY 1
+  {
+    id: 'sun1-1',
+    title: 'SNOWDOWN BATHROBE DAY',
+    description: "You did it, Durango! You survived 9 days of crazy SNOWDOWN debauchery! Whether you're planning on duct taping what's left of your costume back together and roaming Main or just lying on the couch...You get a pass to do it all in your bathrobe. Everyone's a winner because SNOWDOWN 2027 starts in less than 365 days!",
+    date: '2026-02-01',
+    time: 'All Day',
+    location: 'Everywhere',
+    category: 'activity',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+    ageRestriction: 'All ages',
+  },
 ];
 
 export const categories = [
