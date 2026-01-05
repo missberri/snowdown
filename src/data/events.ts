@@ -224,7 +224,7 @@ export const events: Event[] = [
   },
   {
     id: 'fri23-12',
-    title: '42nd Annual Snowdown Follies',
+    title: '42nd Annual SNOWDOWN Follies',
     description: 'Fun, laughter, offbeat entertainment, local commentary, and Colorado history! An all-volunteer cast and crew. The most sought-after tickets of SNOWDOWN.',
     date: '2026-01-23',
     time: '7:00 PM',
@@ -799,7 +799,7 @@ export const events: Event[] = [
   },
   {
     id: 'tue27-10',
-    title: 'Snowdown Follies Gala Performance',
+    title: 'SNOWDOWN Follies Gala Performance',
     description: 'The Follies Grand Gala Performance – returning for the 42nd year. Purchase tickets via Official Gala Wait List (created April 1, 1997).',
     date: '2026-01-27',
     time: '8:00 PM',
