@@ -87,6 +87,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Water wars, this is not. You get 30 minutes to impress our esteemed judges and the audience, who will vote for their favorite. Sets must be mixed & performed live. Limited under-21 slots available. Sign up by Wed, Jan 23. Under 18 with a parent allowed until 10 PM. More info can be found on the American Legion website.",
   'Tortilla Slap':
     "¡Atención, amigos y amigas! It's back — the 3rd Annual Tortilla Slap! We've turned up the chaos, added extra spice, and this year's champ scores a custom tortilla cape. Think you've got the huevos to take the crown? Must be 18+.",
+  'SNOWDOWN Throwdown':
+    "Mountain men and pioneer women have nothing on you. Teams of 2 will race the clock in this endurance SNOWDOWN throwdown! Tackle a 500 m row, power through a 100 ft sled push, and blaze through a 1200 m bike course. Partners can share the workload however they see fit. Teamwork, strategy, and speed are key! Ages 13+.",
 };
 
 async function extractScheduleText(): Promise<string> {
