@@ -1652,7 +1652,7 @@ export const events: Event[] = [
   {
     id: 'fri30-18',
     title: 'SNOWDOWN Follies Videocast',
-    description: 'Catch the Follies on the big screen! Tickets at AnimasCityTheatre.com.',
+    description: 'Catch the Follies on the big screen! All tickets will go on sale at 12 PM on Sat, Jan 10th. Tickets at AnimasCityTheatre.com.',
     date: '2026-01-30',
     time: '7:00 PM',
     location: 'Animas City Theatre - 128 E College Dr',
