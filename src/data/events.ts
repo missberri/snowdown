@@ -1878,7 +1878,7 @@ export const events: Event[] = [
   },
   {
     id: 'sat31-11',
-    title: 'Snowdown Chili Cook Off',
+    title: 'SNOWDOWN Chili Cook Off',
     description: 'Chuck Wagon Chili Roundup! Judging at 10:30 AM, tasting cups on sale at noon. Vote for People\'s Choice!',
     date: '2026-01-31',
     time: '12:00 PM',
