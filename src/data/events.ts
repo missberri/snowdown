@@ -2525,6 +2525,18 @@ export const events: Event[] = [
     cost: 'Free',
     ageRestriction: '21+',
   },
+  {
+    id: 'sat31-36',
+    title: 'Booty Shaking Contest',
+    description: "This bootylicious event is all about bringing your best rhythm, style, and saloon hall flair to the dance hall. Participants will compete to see who can bring the most energy, creativity, and, of course, the best booty-bouncing moves. Prizes will be awarded to the most impressive performers, but everyone will leave with a new level of confidence and some seriously smooth moves. Must be 18+.",
+    date: '2026-01-31',
+    time: '9:00 PM',
+    location: 'Wild Horse Saloon - 601 E 2nd Ave Ste A',
+    category: 'competition',
+    coordinates: { lat: 37.2749, lng: -107.8820 },
+    cost: '$5 cover',
+    ageRestriction: '18+',
+  },
 
   // SUNDAY, FEBRUARY 1
   {
