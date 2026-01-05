@@ -1888,6 +1888,18 @@ export const events: Event[] = [
     ageRestriction: '14+',
   },
   {
+    id: 'fri30-17b',
+    title: '42nd Annual SNOWDOWN Follies',
+    description: 'See FRIDAY, Jan 23, 7 PM for details.',
+    date: '2026-01-30',
+    time: '7:00 PM',
+    location: 'Durango Arts Center Theatre - 802 E 2nd Ave',
+    category: 'entertainment',
+    coordinates: { lat: 37.2749, lng: -107.8820 },
+    cost: '$30',
+    ageRestriction: '18+',
+  },
+  {
     id: 'fri30-18',
     title: 'SNOWDOWN Follies Videocast',
     description: 'Catch the Follies on the big screen! All tickets will go on sale at 12 PM on Sat, Jan 10th. Tickets at AnimasCityTheatre.com.',
