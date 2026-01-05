@@ -89,6 +89,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "¡Atención, amigos y amigas! It's back — the 3rd Annual Tortilla Slap! We've turned up the chaos, added extra spice, and this year's champ scores a custom tortilla cape. Think you've got the huevos to take the crown? Must be 18+.",
   'SNOWDOWN Throwdown':
     "Mountain men and pioneer women have nothing on you. Teams of 2 will race the clock in this endurance SNOWDOWN throwdown! Tackle a 500 m row, power through a 100 ft sled push, and blaze through a 1200 m bike course. Partners can share the workload however they see fit. Teamwork, strategy, and speed are key! Ages 13+.",
+  'Kids Pinball Tournament':
+    "Calling all young pinball wizards! It's time to grab a slice and show off your skills in our 3-Strike Pinball Tournament. Players go head-to-head in epic pinball battles. Lose a match? That's one strike. Three strikes and you're out! Keep playing, keep scoring, and dodge those strikes! The last kid standing without three strikes is crowned the ultimate Pinball Wizard. Must be under 18.",
 };
 
 async function extractScheduleText(): Promise<string> {
