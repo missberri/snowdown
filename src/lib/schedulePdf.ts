@@ -73,6 +73,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "It's Centennial State Theme Week here on the Reel of Fortune! Hosted by Ryan Seabass and Vanna Whitefish. Use your casting arm to spin the Reel (wheel) and solve puzzles unique to Colorful Colorado! 2 people per team with 3 rounds of puzzles and a Bonus Round. Register by Wed, Jan 28. All ages welcome!",
   "Booze N'Beacons":
     "A collision of libations and life-saving skills, incorporating teamwork, knowledge of the downtown bar scene, and skills with an avalanche beacon that will send teams out across Durango in a competition to out-track one another. The goals? Hone your beacon skills and socialize with others in an easy-going, booze-imbued, avalanche burial setting. Teams of 4 people. Sign up by Mon, Jan 26. Must be 21+.",
+  'Red Ball Express':
+    "Hosted by Rotary Clubs of La Plata County and Alpine Bank. Red Ball Express is a local fundraising event organized by the Rotary Clubs of La Plata County. This is the ultimate game of chance and your opportunity to be a \"high roller\" while supporting your community! You could win $5,000, $2,000, or $1,000 and help local non-profits. Here's your chance to make history and have a ball! Find more information at DurangoRedBall.com. Must be 18+.",
 };
 
 async function extractScheduleText(): Promise<string> {
