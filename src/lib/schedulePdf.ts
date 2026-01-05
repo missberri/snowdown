@@ -105,6 +105,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Bring your best brewery banter and your most hop-forward costume to Lola's Place for the Ultimate Bar Olympics. Teams will go pint-to-pint in a lineup of classic taproom challenges, think cornhole and a few surprise brewhouse-inspired events. Costumes are encouraged, and bonus points are awarded for creativity. Must be 21+.",
   'Search for the Silver Bullet Awards':
     "See All Week for more details.",
+  'Gen Alpha/Beta Railjam':
+    "See FRIDAY, Jan 30, 7 PM for more details. Ages 13 and under, with a participant cap of 40.",
 };
 
 async function extractScheduleText(): Promise<string> {
