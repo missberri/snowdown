@@ -1570,7 +1570,7 @@ export const events: Event[] = [
   {
     id: 'fri30-11',
     title: 'Spaghetti Dinner',
-    description: 'Pasta la vista, baby! Spaghetti, meatballs, salad, and bread. Served before and after parade until sold out.',
+    description: 'Pasta la vista, baby! A spaghetti dinner is served before and after the parade or until sold out. Strap on your feedsack! Spaghetti, meatballs, salad, and bread. All ages welcome!',
     date: '2026-01-30',
     time: '5:00 PM',
     location: 'Elks Lodge #507 - 901 E 2nd Ave',
