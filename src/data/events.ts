@@ -931,7 +931,7 @@ export const events: Event[] = [
   {
     id: 'wed28-11',
     title: 'Pop Darts Tournament',
-    description: 'Twelve teams of two compete for top 3 prizes. What are Pop Darts? Come find out!',
+    description: 'Join us at The ACT for our Pop Darts tournament! What are Pop Darts? Proof that Durango will make a SNOWDOWN event out of anything. Twelve teams of two compete for a chance to win one of three great prizes awarded to the top 3 teams. Must 21+.',
     date: '2026-01-28',
     time: '5:30 PM',
     location: 'Animas City Theater - 128 E College Dr',
