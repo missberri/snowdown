@@ -491,6 +491,18 @@ export const events: Event[] = [
     cost: 'Free',
     ageRestriction: '18+',
   },
+  {
+    id: 'sat24-20',
+    title: '42nd Annual SNOWDOWN Follies',
+    description: 'See FRIDAY, Jan 23, 7 PM for details.',
+    date: '2026-01-24',
+    time: '7:00 PM',
+    location: 'Durango Arts Center Theatre - 802 E 2nd Ave',
+    category: 'entertainment',
+    coordinates: { lat: 37.2749, lng: -107.8820 },
+    cost: '$30',
+    ageRestriction: '18+',
+  },
 
   // SUNDAY, JANUARY 25
   {
