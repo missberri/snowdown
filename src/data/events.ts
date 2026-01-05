@@ -837,7 +837,7 @@ export const events: Event[] = [
   {
     id: 'tue27-7',
     title: 'Colorado Split Flipper',
-    description: 'A pinball smorgasbord of mini events. Games include split flippers, stall ball, and highest score.',
+    description: 'A pinball smorgasbord of mini events held for fun and prizes. Games include split flippers (1 team shares right and left flippers), stall ball (a conga line of unlimited players lines up to "stall" the ball and then quickly get back in line), and the highest score. Come out and enjoy some casual but fun pinball events. All ages welcome!',
     date: '2026-01-27',
     time: '6:00 PM',
     location: 'Union Social House - 3062 Main',
