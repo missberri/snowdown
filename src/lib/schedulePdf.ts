@@ -32,7 +32,7 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
   'Search for the Silver Bullet':
     "Hosted by A & L Coors & Four Corners Broadcasting. Engage your inner Zebulon Pike or Mary Cronin! Hidden somewhere among the cliffs, canyons, mountains, and meadows of La Plata County, the Silver Bullet awaits. Starting Mon, Jan 26, daily clues will be released on RADIO 101.3 FM & KRSJ 100.5 FM. Be creative and innovative in solving these clues; there's only one Silver Bullet and no second place! Registration is not required. Find it first and win $250 cash, glory, and other fabulous prizes! All ages welcome. Must be 21+ to win.",
   'SNOWDOWN Theme Contest':
-    "Submit Your Idea for SNOWDOWN 2028! Themes are chosen 2 years in advance and must be unique from themes used in previous years. Please submit your ideas by 5 PM on Sun, Feb 1. Keep it family-friendly and unique from previous themes. Check SNOWDOWN.org to see past themes. All ages",
+    "Submit Your Idea for SNOWDOWN 2028! Themes are chosen 2 years in advance and must be unique from themes used in previous years. Please submit your ideas by 5 PM on Sun, Feb 1. Keep it family-friendly and unique from previous themes. Check SNOWDOWN.org to see past themes. All ages welcome!",
   'SNOWDOWN T-Shirt Day':
     "Prepare to make history with the official 2026 SNOWDOWN merch! Purchase your very own themed adornments, posters, and buttons released only once a year! These limited-edition collectibles celebrate 150 years of Colorado statehood. Stop by Magpie's to load up your loot!",
   'Colorado Costume Dance Party':
