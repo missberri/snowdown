@@ -1521,6 +1521,18 @@ export const events: Event[] = [
     cost: 'Free',
   },
   {
+    id: 'thu29-16g',
+    title: 'Magical Mystery Musical Tour',
+    description: 'See WEDNESDAY, Jan 28, 6 PM for details.',
+    date: '2026-01-29',
+    time: '6:00 PM',
+    location: 'Ska World Headquarters - 225 Girard St',
+    category: 'entertainment',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
+  {
     id: 'thu29-17',
     title: 'Beer Pong',
     description: '64-team bracket, double elimination with traditional rules. Sign up 30 minutes before.',
