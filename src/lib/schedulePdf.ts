@@ -59,6 +59,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Spend an evening with the Rocky Mountain Mystics Living Tarot Troupe! Immerse yourself in an interactive performance where each card is brought to life. As with Tarot readings, each performance is different, as the cards pulled by audience members result in a unique, personal reading performed by our troupe of silly mediums. Must be 21+.",
   "Buckin' Mechanical Bullriding Contest":
     "We're bringing a Colorado rodeo tradition indoors with a riding contest more challenging than navigating Red Mountain pass during a blizzard. $250, $100, and $50 cash prizes for 1st, 2nd, and 3rd. Must be 18+.",
+  'Mah Jongg Tournament':
+    "Colorado might've already been on the map before American Mah Jongg hit the scene in the early 1900s, but recently, the popularity has soared! We'll follow the National Mah Jongg League (NMJL) rules, which use the NMJL card. Bring your 2025 NMJL card, but leave your quarters at home. We will track points and award cash prizes to the winners. Costumes encouraged. Please sign up by 5 PM on Tues, Jan 29. All ages welcome, but you must already know how to play American Mah Jongg.",
 };
 
 async function extractScheduleText(): Promise<string> {
