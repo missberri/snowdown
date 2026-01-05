@@ -505,7 +505,7 @@ export const events: Event[] = [
   },
   {
     id: 'sat24-21',
-    title: '10 PM Karaoke Contest',
+    title: 'Karaoke Contest',
     description: 'See FRIDAY Jan 23, 10 PM for details.',
     date: '2026-01-24',
     time: '10:00 PM',
