@@ -1771,7 +1771,7 @@ export const events: Event[] = [
   },
   {
     id: 'sat31-2',
-    title: 'Snowdown Throwdown',
+    title: 'SNOWDOWN Throwdown',
     description: 'Teams of 2 race the clock: 500 m row, 100 ft sled push, and 1200 m bike course!',
     date: '2026-01-31',
     time: '10:00 AM',
