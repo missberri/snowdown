@@ -52,60 +52,11 @@ export async function loadScheduleText(): Promise<string> {
   return scheduleTextPromise;
 }
 
-export async function getEventFullDescription(params: {
+// Disabled: PDF parsing was causing incorrect descriptions to bleed between events.
+// The hardcoded descriptions in events.ts are now the source of truth.
+export async function getEventFullDescription(_params: {
   title: string;
   location: string;
 }): Promise<string | null> {
-  const text = await loadScheduleText();
-  const upper = text.toUpperCase();
-
-  const titleNeedle = params.title.toUpperCase();
-  const locNeedle = params.location.toUpperCase();
-
-  let idx = upper.indexOf(titleNeedle);
-  while (idx !== -1) {
-    const locIdx = upper.indexOf(locNeedle, idx);
-
-    // Ensure the location is near the title (same event block)
-    if (locIdx !== -1 && locIdx - idx < 500) {
-      // Start right after the title (some events include the location inside the description)
-      const start = idx + titleNeedle.length;
-
-      const endCandidates: number[] = [
-        upper.indexOf('EVENT COORDINATOR', start),
-        upper.indexOf('ENTRY COST', start),
-      ].filter((i) => i !== -1);
-
-      // Some events have clear end markers inside the description itself.
-      // If present, prefer truncating at that point (including punctuation).
-      const allAgesIdx = upper.indexOf('ALL AGES WELCOME', start);
-      if (allAgesIdx !== -1) {
-        let endIdx = allAgesIdx + 'ALL AGES WELCOME'.length;
-        const nextChar = upper[endIdx];
-        if (nextChar === '!' || nextChar === '.') endIdx += 1;
-        endCandidates.push(endIdx);
-      }
-
-      if (!endCandidates.length) return null;
-
-      const end = Math.min(...endCandidates);
-      const raw = text.slice(start, end);
-
-      let cleaned = collapseWhitespace(raw);
-
-      // If the extracted block begins with the location (common in the PDF), strip it.
-      if (cleaned.toUpperCase().startsWith(locNeedle)) {
-        cleaned = cleaned.slice(locNeedle.length).trim();
-      }
-
-      // Avoid returning fragments like ", the Silver Bullet awaits."
-      cleaned = cleaned.replace(/^[,.;:–—\-\s]+/, '').trim();
-
-      return cleaned || null;
-    }
-
-    idx = upper.indexOf(titleNeedle, idx + titleNeedle.length);
-  }
-
   return null;
 }
