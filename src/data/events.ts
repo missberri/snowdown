@@ -2326,6 +2326,17 @@ export const events: Event[] = [
     ageRestriction: '21+',
   },
   {
+    id: 'sat31-22b',
+    title: "Josie Pete's Golf Tournament Award Ceremony",
+    description: 'See SATURDAY Feb 1, 11:30 AM for details.',
+    date: '2026-01-31',
+    time: '4:00 PM',
+    location: 'Elks Lodge #507 - 901 E 2nd Ave',
+    category: 'entertainment',
+    coordinates: { lat: 37.2749, lng: -107.8820 },
+    cost: 'Free',
+  },
+  {
     id: 'sat31-23',
     title: "Hobby Horsin' Around for Adults",
     description: 'Adult version of Hobby Horsin\'! No, not like that - get your mind out of the gutter!',
