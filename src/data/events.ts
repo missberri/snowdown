@@ -826,7 +826,7 @@ export const events: Event[] = [
   {
     id: 'tue27-6',
     title: 'Pepper Pong',
-    description: 'A paddle sport that\'s part ping pong, part pickleball, and all pepper-powered fun! Three fiery levels: Jalapeño, Habanero, and Ghost Pepper.',
+    description: "Love pickleball, tennis, or ping pong? Then turn up the heat and bring the wow! Pepper Pong is SNOWDOWN's newest spicy showdown at Lola's Place, a paddle sport that's part ping pong, part pickleball, and all pepper-powered fun. Play with three fiery levels: Jalapeño, Habanero, and Ghost Pepper. Bring a partner (or we'll find one for you) and join the heat. Be there or be bland!",
     date: '2026-01-27',
     time: '5:30 PM',
     location: "Lola's Place - 725 E 2nd Ave",
