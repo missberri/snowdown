@@ -2398,7 +2398,7 @@ export const events: Event[] = [
   {
     id: 'sat31-28',
     title: 'Gen Alpha/Beta RailJam',
-    description: 'Rail jam for ages 13 and under, cap of 40 participants.',
+    description: 'See FRIDAY, Jan 30, 7 PM for more details. Ages 13 and under, with a participant cap of 40.',
     date: '2026-01-31',
     time: '5:00 PM - 7:00 PM',
     location: 'Chapman Hill - 500 Florida Rd',
