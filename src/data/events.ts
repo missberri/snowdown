@@ -1371,7 +1371,7 @@ export const events: Event[] = [
   {
     id: 'thu29-9',
     title: "It's Your Move Connect 4",
-    description: 'Classic Connect 4 that may turn into an outright Hootenanny!',
+    description: "What starts as a classic game of Connect 4 may turn into an outright Hootenanny. Let's hope, at least. Come one, come all! Must be 21+.",
     date: '2026-01-29',
     time: '5:00 PM',
     location: '11th Street Station - 1101 Main',
