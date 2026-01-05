@@ -2042,6 +2042,18 @@ export const events: Event[] = [
     cost: '$15',
     ageRestriction: '21+',
   },
+  {
+    id: 'fri30-30',
+    title: 'Cake Walk',
+    description: "Show us why Colorado has been shaking its statehood for 150 years. Think you have junk in the trunk? Then twerk it out and see how the crowd reacts to this booty call. A $50 bar tab, $25 bar tab, and a free drink for 1st, 2nd, and 3rd place. Must be 21+.",
+    date: '2026-01-30',
+    time: '10:00 PM',
+    location: 'Starlight Lounge - 937 Main',
+    category: 'competition',
+    coordinates: { lat: 37.2756, lng: -107.8807 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
 
   // SATURDAY, JANUARY 31
   {
