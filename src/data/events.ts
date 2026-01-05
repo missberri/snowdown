@@ -1474,6 +1474,18 @@ export const events: Event[] = [
     ageRestriction: '18+',
   },
   {
+    id: 'thu29-16c',
+    title: 'Down with the Yahtzee',
+    description: 'Will you strike silver or bust your roll? Time to shake the dice and go for the Yahtzee! Test your luck, plan your moves, and show off your strategy skills! Must be 21+.',
+    date: '2026-01-29',
+    time: '6:00 PM',
+    location: '11th Street Station - 1101 Main',
+    category: 'competition',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
+  {
     id: 'thu29-17',
     title: 'Beer Pong',
     description: '64-team bracket, double elimination with traditional rules. Sign up 30 minutes before.',
