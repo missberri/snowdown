@@ -68,7 +68,7 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
   'Connect 4':
     "What starts as a classic game of Connect 4 may turn into an outright Hootenanny. Let's hope, at least. Come one, come all! Must be 21+.",
   'Paint the Peaks & Colorado Trivia':
-    "Paint a scenic mountain range, guided step by step. Between brushstrokes, test your Colorado trivia knowledge! Register on Eventbrite.",
+    "Raise a glass and your paintbrush! Come paint a scenic local mountain range, guided step by step by our instructor. Between brushstrokes, test your knowledge with fun Colorado trivia. No experience needed! Please reserve your spot online on Eventbrite. All ages welcome!",
   'Reel of Fortune':
     "It's Centennial State Theme Week here on the Reel of Fortune! Hosted by Ryan Seabass and Vanna Whitefish. Use your casting arm to spin the Reel (wheel) and solve puzzles unique to Colorful Colorado! 2 people per team with 3 rounds of puzzles and a Bonus Round. Register by Wed, Jan 28. All ages welcome!",
 };
