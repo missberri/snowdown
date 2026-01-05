@@ -884,7 +884,7 @@ export const events: Event[] = [
   },
   {
     id: 'wed28-7',
-    title: 'Local Family Feud',
+    title: 'Family Feud',
     description: 'We asked 100 Durango locals the most pressing questions. 8 teams of 4 compete! Sign up by Mon, Jan 26.',
     date: '2026-01-28',
     time: '5:00 PM',
