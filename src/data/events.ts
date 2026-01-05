@@ -85,7 +85,7 @@ export const events: Event[] = [
   {
     id: 'aw-7',
     title: 'SNOWDOWN Theme Contest',
-    description: 'Submit Your Idea for SNOWDOWN 2028! Themes are chosen 2 years in advance and must be unique from themes used in previous years. Please submit your ideas by 5 PM on Sun, Feb 1. Keep it family-friendly and unique from previous themes. Check SNOWDOWN.org to see past themes. All ages welcome!',
+    description: 'Submit Your Idea for SNOWDOWN 2028! Themes are chosen 2 years in advance. Submit ideas by 5 PM on Sun, Feb 1. Keep it family-friendly and unique. All ages welcome!',
     date: 'all-week',
     time: 'By 5 PM Sun, Feb 1',
     location: "Magpie's Newsstand & Café - 707 Main",
