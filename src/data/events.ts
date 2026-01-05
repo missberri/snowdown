@@ -40,7 +40,7 @@ export const events: Event[] = [
   {
     id: 'aw-3',
     title: 'Howl the West Was Won',
-    description: 'Furry outpaws wanted! Mosey on into Bark Bark for an Old West photo of your pup. Photos are printed and framed.',
+    description: "Furry outpaws wanted! Mosey on into Bark Bark for an Old West photo of your pup. From mining mutts to mountain dogs, Colorado's always been best friend to man's best friend. Photos are printed and framed. All ages welcome!",
     date: 'all-week',
     time: 'Store Hours',
     location: 'Bark Bark - 634 Main Ste B',
