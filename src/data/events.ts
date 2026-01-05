@@ -2322,7 +2322,7 @@ export const events: Event[] = [
     location: 'Animas City Theatre - 128 E College Dr',
     category: 'entertainment',
     coordinates: { lat: 37.2785, lng: -107.8800 },
-    cost: '$10',
+    cost: '$12',
     ageRestriction: '21+',
   },
   {
