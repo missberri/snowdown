@@ -967,6 +967,18 @@ export const events: Event[] = [
     cost: 'Free',
   },
   {
+    id: 'wed28-5b',
+    title: 'Marijuana & Moonshine Trivia',
+    description: 'Fun trivia questions for the marijuana and moonshine aficionados. (Looking at you, Senator Hickenlooper.) Food and drink prizes are awarded as correct answers accumulate. Must be 18+.',
+    date: '2026-01-28',
+    time: '4:00 PM - 6:00 PM',
+    location: 'Hermosa Cafe - 738 Main',
+    category: 'competition',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+    ageRestriction: '18+',
+  },
+  {
     id: 'wed28-6',
     title: 'Hot Wing Eating Contest',
     description: 'Come hungry! Limited to first 20 entries. Winners receive $150, $100, and $75 gift cards.',
