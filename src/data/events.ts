@@ -98,7 +98,7 @@ export const events: Event[] = [
   {
     id: 'fri23-1',
     title: 'Snowdown T-Shirt Day',
-    description: 'Purchase your official 2026 SNOWDOWN merch! Limited-edition collectibles celebrating 150 years of Colorado statehood.',
+    description: "Prepare to make history with the official 2026 SNOWDOWN merch! Purchase your very own themed adornments, posters, and buttons released only once a year! These limited-edition collectibles celebrate 150 years of Colorado statehood. Stop by Magpie's to load up your loot!",
     date: '2026-01-23',
     time: 'All Day',
     location: "Magpie's Newsstand & Café - 707 Main",
