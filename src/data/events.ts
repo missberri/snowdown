@@ -2511,7 +2511,6 @@ export const events: Event[] = [
     location: 'Black Heron - 726 Main',
     category: 'entertainment',
     coordinates: { lat: 37.2753, lng: -107.8801 },
-    cost: 'Free',
     ageRestriction: '21+',
   },
   {
