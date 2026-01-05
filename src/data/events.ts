@@ -1854,7 +1854,7 @@ export const events: Event[] = [
   },
   {
     id: 'sat31-9',
-    title: "Outlaw Josie Pete's Snowdown Golf",
+    title: "Outlaw Josie Pete's SNOWDOWN Golf",
     description: 'Annual costumed tavern golf shootout! Armed with your own putter and golf ball, duel your way through Durango\'s finest watering holes.',
     date: '2026-01-31',
     time: '11:30 AM',
