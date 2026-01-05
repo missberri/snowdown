@@ -1841,6 +1841,18 @@ export const events: Event[] = [
     ageRestriction: '18+',
   },
   {
+    id: 'fri30-14b',
+    title: 'Beer Bingo',
+    description: 'See FRIDAY Jan 24, 6 PM for details.',
+    date: '2026-01-30',
+    time: '6:00 PM',
+    location: 'Durango Beer and Ice Company - 3000 Main',
+    category: 'entertainment',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
+  {
     id: 'fri30-15',
     title: 'SNOWDOWN Light Parade',
     description: "Durango's only nighttime parade! Brightly lit floats light up Main Avenue celebrating 150 years of Colorado statehood.",
