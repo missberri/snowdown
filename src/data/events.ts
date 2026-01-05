@@ -1510,6 +1510,17 @@ export const events: Event[] = [
     ageRestriction: '21+',
   },
   {
+    id: 'thu29-16f',
+    title: 'Most Wholesome Compliment Battle',
+    description: 'In this roast-battle turned love-fest, we will compete to uplift each other with soul-soothing praise. Can you drip with positivity like a melting icicle? All ages welcome.',
+    date: '2026-01-29',
+    time: '6:00 PM',
+    location: 'EsoTerra Cider & Wines - 558 Main',
+    category: 'competition',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+  },
+  {
     id: 'thu29-17',
     title: 'Beer Pong',
     description: '64-team bracket, double elimination with traditional rules. Sign up 30 minutes before.',
