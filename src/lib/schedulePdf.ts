@@ -93,6 +93,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Calling all young pinball wizards! It's time to grab a slice and show off your skills in our 3-Strike Pinball Tournament. Players go head-to-head in epic pinball battles. Lose a match? That's one strike. Three strikes and you're out! Keep playing, keep scoring, and dodge those strikes! The last kid standing without three strikes is crowned the ultimate Pinball Wizard. Must be under 18.",
   'Snowdown Golf':
     "It's the Colorado Open, SNOWDOWN style. Saddle up for the annual costumed tavern golf shootout, where only the sharpest aim (and the steadiest stride) prevail. High noon marks the first draw. Armed with your own putter and golf ball, you'll duel your way through Durango's finest watering holes. See SNOWDOWN.org for entry details. Must be 21+.",
+  'Bloody Mary Contest':
+    "Hosted by Star Liquor, this is the event your liver has been waiting for. Fun? You're bloody right! Bring your signature Bloody Mary ingredients. Ice, cups, and vodka will be provided to all our mixologists. The tastiest cocktail and the best presentation (booth and costume) win! See SNOWDOWN.org for entry details. Must be 21+.",
 };
 
 async function extractScheduleText(): Promise<string> {
