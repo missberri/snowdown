@@ -1462,6 +1462,18 @@ export const events: Event[] = [
     ageRestriction: '21+',
   },
   {
+    id: 'thu29-16b',
+    title: 'Cluck Cluck Fashion',
+    description: "Have you always dreamed of being in a fashion show? This is your chance! The only catch? You must wear your most chicken-inspired outfit to compete. Bonus points if your runway strut rivals Mike the Headless Chicken, the infamous Fruita celebrity! Must be 18+.",
+    date: '2026-01-29',
+    time: '6:00 PM',
+    location: '11th Street Station - 1101 Main',
+    category: 'competition',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+    ageRestriction: '18+',
+  },
+  {
     id: 'thu29-17',
     title: 'Beer Pong',
     description: '64-team bracket, double elimination with traditional rules. Sign up 30 minutes before.',
