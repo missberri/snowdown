@@ -2502,6 +2502,18 @@ export const events: Event[] = [
     cost: '$15',
     ageRestriction: '21+',
   },
+  {
+    id: 'sat31-34',
+    title: 'SNOWDOWN After Dark',
+    description: "When the sun sets behind the San Juan Mountains, the real party begins! Join us for SNOWDOWN After Dark, where Durango's nightlife rivals the rowdiest mining camp revelry. Must be 21+.",
+    date: '2026-01-31',
+    time: '7:30 PM',
+    location: 'Black Heron - 726 Main',
+    category: 'entertainment',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
 
   // SUNDAY, FEBRUARY 1
   {
