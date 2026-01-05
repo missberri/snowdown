@@ -79,6 +79,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Pasta la vista, baby! A spaghetti dinner is served before and after the parade or until sold out. Strap on your feedsack! Spaghetti, meatballs, salad, and bread. All ages welcome!",
   'Boomer Hot Dog Show, Gen-X Ski Ballet & Gen-Z/Millenial Rail Jam':
     "From Colorado's pioneering ski towns to today's world-class resorts, we've been pushing the limits on snow for 150 years. Skiers and snowboarders will compete for a spot on the podium, judged on their line, technical ability, style, variety, and overall impression as they ride and glide through the course. Ages 14 and over, with a participant cap of 40. Proceeds benefit local youth Ski and Snowboard Programs. Register online via the DurangoWinterSportsClub.org website. Prizes for the top 3 males and females in each division: 14 - 18 and 18+.",
+  'SNOWDOWN Follies Videocast':
+    "Catch the Follies on the big screen! All tickets will go on sale at 12 PM on Sat, Jan 10th. Tickets at AnimasCityTheatre.com.",
 };
 
 async function extractScheduleText(): Promise<string> {
