@@ -101,6 +101,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Saddle up, partners! Grab your trusty hobby horse and race across the DoubleTree corral in our first-ever Steeple Chase showdown for kids. Teams of two will leap over hurdles, dodge waterin' holes, and wrangle through obstacles in a test of speed, agility, and cowboy spirit. Be the first to cross the finish line without losin' yer hat or yer nerve, and ride off as the Steeple Chase Champion! Sign-ups start at 2:30 PM. Ages 3–17.",
   "Hobby Horsin' Around for Adults":
     "Adult version of Hobby Horsin'. No, not like that - get your mind out of the gutter! Must be 21+ to ride this ride. See SATURDAY, Jan 31, 3 PM for more details.",
+  'Bar Olympics':
+    "Bring your best brewery banter and your most hop-forward costume to Lola's Place for the Ultimate Bar Olympics. Teams will go pint-to-pint in a lineup of classic taproom challenges, think cornhole and a few surprise brewhouse-inspired events. Costumes are encouraged, and bonus points are awarded for creativity. Must be 21+.",
 };
 
 async function extractScheduleText(): Promise<string> {
