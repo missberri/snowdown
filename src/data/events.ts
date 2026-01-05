@@ -910,7 +910,7 @@ export const events: Event[] = [
   {
     id: 'wed28-2',
     title: "SNOWDOWN Fashion Do's and Dont's",
-    description: 'Behold, as our elite models display why Durango was voted "Worst Dressed Community" by USA Today. This isn\'t the boardwalk, honey, it\'s the catwalk! Strut your stuff like famed Colorado gambler Poker Alice owes you money, and be ready for some bawdy but good-humored entertainment. Doors open at 11 AM. Lunch for seated guests begins at 11:30 AM, and the show starts at 12:30 PM. Cash bar. See SNOWDOWN.org for entry details. Prizes awarded for Best Dressed. Must be 21+.',
+    description: "Behold, as our elite models display why Durango was voted \"Worst Dressed Community\" by USA Today. This isn't the boardwalk, honey, it's the catwalk!",
     date: '2026-01-28',
     time: '12:00 PM',
     location: 'La Plata County Fairgrounds - 2500 Main',
