@@ -95,6 +95,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "It's the Colorado Open, SNOWDOWN style. Saddle up for the annual costumed tavern golf shootout, where only the sharpest aim (and the steadiest stride) prevail. High noon marks the first draw. Armed with your own putter and golf ball, you'll duel your way through Durango's finest watering holes. See SNOWDOWN.org for entry details. Must be 21+.",
   'Bloody Mary Contest':
     "Hosted by Star Liquor, this is the event your liver has been waiting for. Fun? You're bloody right! Bring your signature Bloody Mary ingredients. Ice, cups, and vodka will be provided to all our mixologists. The tastiest cocktail and the best presentation (booth and costume) win! See SNOWDOWN.org for entry details. Must be 21+.",
+  'SNOWDOWN Chili Cook Off':
+    "Step right up to the Chuck Wagon Chili Roundup, where the finest chili cooks in the territory roll into town to show what they've got simmering in their pots. The cookfires and booth fixin' begin at sun-up, 7 AM sharp. At 10:30 AM, the judges ride in for the official tasting. At high noon, tasting cups go on sale, so grab one and mosey your way through the wagons to cast your vote for the People's Choice! Bring your appetite and your frontier spirit! See SNOWDOWN.org for entry details. All ages welcome!",
 };
 
 async function extractScheduleText(): Promise<string> {
