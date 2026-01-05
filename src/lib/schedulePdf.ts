@@ -109,6 +109,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "See FRIDAY, Jan 30, 7 PM for more details. Ages 13 and under, with a participant cap of 40.",
   'Battle of the Bands':
     "Crank up the amps and hit the stage for the ultimate Battle of the Bands! You've got 45 minutes to blow the judges away and ignite the crowd. The fans will vote for their favorite act, so make sure your groupies are there to cheer you on. Sign up by Sat, Jan 24. More info on the Durango Legion website. Under 18 with a parent allowed till 10 PM.",
+  'Durangotang Glow Dance':
+    "Flaunt your favorite Colorado gear for a glow-in-the-dark dance party! Soccer jersey, ski goggles, ballet shoes, bathing suit, whatever represents your favorite part of the Colorado experience! Join us as we dance to some favorite hits under the glow. All ages are welcome, but children must be supervised.",
 };
 
 async function extractScheduleText(): Promise<string> {
