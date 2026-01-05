@@ -3,6 +3,7 @@ import { Heart } from 'lucide-react';
 import { events, Event } from '@/data/events';
 import { format, parseISO } from 'date-fns';
 import EventCard from './EventCard';
+import { useEventFullDescription } from '@/hooks/useEventFullDescription';
 
 interface MyEventsViewProps {
   likedEventIds: Set<string>;
@@ -20,6 +21,13 @@ const MyEventsView = ({
   const likedEvents = useMemo(() => {
     return events.filter((event) => likedEventIds.has(event.id));
   }, [likedEventIds]);
+
+  const selectedEvent = useMemo(
+    () => (selectedEventId ? events.find((e) => e.id === selectedEventId) ?? null : null),
+    [selectedEventId]
+  );
+
+  const { fullDescription, loading: fullDescriptionLoading } = useEventFullDescription(selectedEvent);
 
   // Group events by date
   const groupedEvents = useMemo(() => {
@@ -87,6 +95,8 @@ const MyEventsView = ({
                     event={event}
                     onClick={() => onEventSelect(event.id)}
                     isSelected={selectedEventId === event.id}
+                    fullDescription={selectedEventId === event.id ? fullDescription ?? undefined : undefined}
+                    isDescriptionLoading={selectedEventId === event.id ? fullDescriptionLoading : false}
                     isLiked={true}
                     onToggleLike={onToggleLike}
                   />
