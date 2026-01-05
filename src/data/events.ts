@@ -2316,7 +2316,7 @@ export const events: Event[] = [
   {
     id: 'sat31-22',
     title: "SNOWDOWN Fashion Do's and Don'ts Videocast",
-    description: 'Second chance to catch the dazzling Fashion Do\'s and Don\'ts! Tickets at AnimasCityTheatre.com.',
+    description: "Did you miss the live show? Here's your second chance to catch the dazzling Fashion Do's and Don'ts in memorex style! See the glitz, the glam, and all the style a true Diamond Belle Saloon belle or gent should know. Snag your tickets online at AnimasCityTheatre.com which go on sale at noon on January 10th.",
     date: '2026-01-31',
     time: '4:00 PM',
     location: 'Animas City Theatre - 128 E College Dr',
