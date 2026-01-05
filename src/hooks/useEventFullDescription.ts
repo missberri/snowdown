@@ -6,10 +6,7 @@ const descriptionCache = new Map<string, string>();
 
 export function useEventFullDescription(event: Event | null) {
   const cacheKey = useMemo(() => (event ? event.id : null), [event]);
-  const [fullDescription, setFullDescription] = useState<string | null>(() => {
-    if (!cacheKey) return null;
-    return descriptionCache.get(cacheKey) ?? null;
-  });
+  const [fullDescription, setFullDescription] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -18,13 +15,6 @@ export function useEventFullDescription(event: Event | null) {
     async function run() {
       if (!event) {
         setFullDescription(null);
-        setLoading(false);
-        return;
-      }
-
-      const cached = descriptionCache.get(event.id);
-      if (cached) {
-        setFullDescription(cached);
         setLoading(false);
         return;
       }
@@ -39,7 +29,6 @@ export function useEventFullDescription(event: Event | null) {
         if (cancelled) return;
 
         if (desc) {
-          descriptionCache.set(event.id, desc);
           setFullDescription(desc);
         } else {
           setFullDescription(null);
