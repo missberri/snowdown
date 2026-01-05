@@ -41,6 +41,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Colorado history meets SNOWDOWN mischief. In this paw-some Colorado-themed scavenger quest, you'll sniff out clues, dig up hidden history, and explore today's dog-friendly gems. Purchase a Scavenger Hunt Kit from Pet Haus, solve themed riddles to find participating businesses, collect stamps at each stop, and return completed sheets for prizes and raffle entry. The hunt runs through Sat, Jan 31. All proceeds donated to the La Plata County Humane Society. Prize categories include First to Finish, Most Creative Selfie, Least Number of Hints Used, Most Riddles Completed, and Best Social Media Post. All ages welcome!",
   "Bingo at the Bee's":
     "From gold rush fever to bingo fever; it's Bee-Ingo! Test your luck at the Bee's and see if fortune favors you like Colorado's pioneers. All ages welcome!",
+  'Outhouse Stuffing':
+    "Colorado may be loaded with open spaces, but not during SNOWDOWN outhouse stuffing! The team that pushes and squeezes the most people into the outhouse within 2 minutes, then keeps the door closed for 10 seconds, wins! Participants can sign up as a team or individually to create the largest stuffable team. The only rule is that waivers must be signed. Must be 21+.",
 };
 
 async function extractScheduleText(): Promise<string> {
