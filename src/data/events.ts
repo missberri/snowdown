@@ -1616,6 +1616,18 @@ export const events: Event[] = [
     ageRestriction: '21+',
   },
   {
+    id: 'thu29-23b',
+    title: 'SNOWDOWN Follies Gala Performance',
+    description: 'See TUESDAY Jan 27, 8 PM for details.',
+    date: '2026-01-29',
+    time: '8:00 PM',
+    location: 'Durango Arts Center - 802 E 2nd Ave',
+    category: 'entertainment',
+    coordinates: { lat: 37.2749, lng: -107.8820 },
+    cost: '$75',
+    ageRestriction: '18+',
+  },
+  {
     id: 'thu29-24',
     title: 'Line Dancing Contest',
     description: 'Stomp, slide, and two-step your way to glory on the Wild Horse dance floor!',
