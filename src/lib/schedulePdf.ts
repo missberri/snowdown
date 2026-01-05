@@ -45,6 +45,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Colorado may be loaded with open spaces, but not during SNOWDOWN outhouse stuffing! The team that pushes and squeezes the most people into the outhouse within 2 minutes, then keeps the door closed for 10 seconds, wins! Participants can sign up as a team or individually to create the largest stuffable team. The only rule is that waivers must be signed. Must be 21+.",
   'Crokinole Doubles Tournament':
     "See FRIDAY, Jan 23, 5 PM for details.",
+  "Carver Brewing's Beer Dinner":
+    "Better hop to it! What better way to celebrate SNOWDOWN 2026 than with a dinner of sesquicentennial-themed food and Carver's craft beer pairings! Purchase tickets in advance at CarverBrewing.com. Must be 21+.",
 };
 
 async function extractScheduleText(): Promise<string> {
