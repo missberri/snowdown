@@ -1651,7 +1651,7 @@ export const events: Event[] = [
   },
   {
     id: 'fri30-18',
-    title: 'Snowdown Follies Videocast',
+    title: 'SNOWDOWN Follies Videocast',
     description: 'Catch the Follies on the big screen! Tickets at AnimasCityTheatre.com.',
     date: '2026-01-30',
     time: '7:00 PM',
