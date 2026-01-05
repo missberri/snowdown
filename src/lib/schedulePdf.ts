@@ -49,6 +49,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Better hop to it! What better way to celebrate SNOWDOWN 2026 than with a dinner of sesquicentennial-themed food and Carver's craft beer pairings! Purchase tickets in advance at CarverBrewing.com. Must be 21+.",
   'Scavenger Hunt':
     "The original SNOWDOWN Scavenger Hunt is back! This ain't our first rodeo, but it could be yours. Judging will take place on Fri, Jan 30 at 10 AM. Must be 21+.",
+  'Joint Rolling Contest':
+    "Colorado and weed go together like skis and snow. Now it's your turn to show off those rolling skills! The Joint Rolling contest (using a non-regulated hemp-based product) will consist of 3 categories: Biggest joint rolled, Fastest joint rolling, and Most stylish joint. Points awarded in each category to crown the SNOWDOWN Joint Rolling Champion. A $50 bar tab, $25 bar tab, and a free drink for 1st, 2nd, and 3rd place. Must be 21+.",
 };
 
 async function extractScheduleText(): Promise<string> {
