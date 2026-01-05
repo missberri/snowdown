@@ -1452,7 +1452,7 @@ export const events: Event[] = [
   // FRIDAY, JANUARY 30
   {
     id: 'fri30-1',
-    title: 'Snowdown T-Shirt Day',
+    title: 'SNOWDOWN T-Shirt Day',
     description: "Don your official SNOWDOWN 2026-themed shirt. Stop at Magpie's for your button, hat, shirt, and poster!",
     date: '2026-01-30',
     time: 'All Day',
