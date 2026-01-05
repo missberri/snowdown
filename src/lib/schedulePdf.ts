@@ -37,6 +37,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Prepare to make history with the official 2026 SNOWDOWN merch! Purchase your very own themed adornments, posters, and buttons released only once a year! These limited-edition collectibles celebrate 150 years of Colorado statehood. Stop by Magpie's to load up your loot!",
   'Colorado Costume Dance Party':
     "Lace up your dancing boots and get ready to party, it's a hootenanny! Join us at the library for a Colorado Costume Dance Party-a fun, high-energy celebration just for little ones. Come dressed as your favorite Colorado critter, mountain explorer, skier, or hometown hero, and dance the day away to kid-friendly tunes! Ages 9 and under.",
+  'The Fetch Quest':
+    "Colorado history meets SNOWDOWN mischief. In this paw-some Colorado-themed scavenger quest, you'll sniff out clues, dig up hidden history, and explore today's dog-friendly gems. Purchase a Scavenger Hunt Kit from Pet Haus, solve themed riddles to find participating businesses, collect stamps at each stop, and return completed sheets for prizes and raffle entry. The hunt runs through Sat, Jan 31. All proceeds donated to the La Plata County Humane Society. Prize categories include First to Finish, Most Creative Selfie, Least Number of Hints Used, Most Riddles Completed, and Best Social Media Post. All ages welcome!",
 };
 
 async function extractScheduleText(): Promise<string> {
