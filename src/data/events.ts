@@ -84,7 +84,7 @@ export const events: Event[] = [
   },
   {
     id: 'aw-7',
-    title: 'Snowdown Theme Contest',
+    title: 'SNOWDOWN Theme Contest',
     description: 'Submit Your Idea for SNOWDOWN 2028! Themes are chosen 2 years in advance. Submit ideas by 5 PM on Sun, Feb 1. Keep it family-friendly and unique. All ages welcome!',
     date: 'all-week',
     time: 'By 5 PM Sun, Feb 1',
@@ -97,7 +97,7 @@ export const events: Event[] = [
   // FRIDAY, JANUARY 23
   {
     id: 'fri23-1',
-    title: 'Snowdown T-Shirt Day',
+    title: 'SNOWDOWN T-Shirt Day',
     description: "Prepare to make history with the official 2026 SNOWDOWN merch! Purchase your very own themed adornments, posters, and buttons released only once a year! These limited-edition collectibles celebrate 150 years of Colorado statehood. Stop by Magpie's to load up your loot!",
     date: '2026-01-23',
     time: 'All Day',
