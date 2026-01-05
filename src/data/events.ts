@@ -1394,7 +1394,7 @@ export const events: Event[] = [
   },
   {
     id: 'thu29-11',
-    title: 'Cards Against Snowdown',
+    title: 'Cards Against SNOWDOWN',
     description: 'The most offensive Coloradan game! No game for the faint of heart.',
     date: '2026-01-29',
     time: '5:00 PM',
