@@ -75,6 +75,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "A collision of libations and life-saving skills, incorporating teamwork, knowledge of the downtown bar scene, and skills with an avalanche beacon that will send teams out across Durango in a competition to out-track one another. The goals? Hone your beacon skills and socialize with others in an easy-going, booze-imbued, avalanche burial setting. Teams of 4 people. Sign up by Mon, Jan 26. Must be 21+.",
   'Red Ball Express':
     "Hosted by Rotary Clubs of La Plata County and Alpine Bank. Red Ball Express is a local fundraising event organized by the Rotary Clubs of La Plata County. This is the ultimate game of chance and your opportunity to be a \"high roller\" while supporting your community! You could win $5,000, $2,000, or $1,000 and help local non-profits. Here's your chance to make history and have a ball! Find more information at DurangoRedBall.com. Must be 18+.",
+  'Spaghetti Dinner':
+    "Pasta la vista, baby! A spaghetti dinner is served before and after the parade or until sold out. Strap on your feedsack! Spaghetti, meatballs, salad, and bread. All ages welcome!",
 };
 
 async function extractScheduleText(): Promise<string> {
