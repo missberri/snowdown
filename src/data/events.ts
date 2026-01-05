@@ -2030,6 +2030,18 @@ export const events: Event[] = [
     cost: '$30',
     ageRestriction: '18+',
   },
+  {
+    id: 'fri30-29',
+    title: 'SNOWDOWN Follies Videocast',
+    description: 'See FRIDAY Jan 30, 7 PM for details.',
+    date: '2026-01-30',
+    time: '10:00 PM',
+    location: 'Animas City Theatre - 128 E College Dr',
+    category: 'entertainment',
+    coordinates: { lat: 37.2785, lng: -107.8800 },
+    cost: '$15',
+    ageRestriction: '21+',
+  },
 
   // SATURDAY, JANUARY 31
   {
