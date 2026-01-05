@@ -1665,6 +1665,18 @@ export const events: Event[] = [
     cost: 'Varies',
   },
   {
+    id: 'fri30-1b',
+    title: 'Scavenger Hunt Judging',
+    description: 'See WEDNESDAY, Jan 28, 12 PM for details.',
+    date: '2026-01-30',
+    time: '10:00 AM',
+    location: 'Durango American Legion - 878 E 2nd Ave',
+    category: 'competition',
+    coordinates: { lat: 37.2749, lng: -107.8820 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
+  {
     id: 'fri30-2',
     title: 'Kan Jam',
     description: 'Grab a partner and toss the frisbee to be the winning team!',
