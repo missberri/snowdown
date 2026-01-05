@@ -57,6 +57,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "A bona fide pinball tournament sponsored by the International Pinball Flipper Association. Format will be 3 strikes, you're out! The winner? The one who survives the chaos with the most points and the least wrist cramps. Prizes for 1st, 2nd, 3rd, and Best Costume. All ages welcome!",
   'Rocky Mountain Mystics Living Tarot':
     "Spend an evening with the Rocky Mountain Mystics Living Tarot Troupe! Immerse yourself in an interactive performance where each card is brought to life. As with Tarot readings, each performance is different, as the cards pulled by audience members result in a unique, personal reading performed by our troupe of silly mediums. Must be 21+.",
+  "Buckin' Mechanical Bullriding Contest":
+    "We're bringing a Colorado rodeo tradition indoors with a riding contest more challenging than navigating Red Mountain pass during a blizzard. $250, $100, and $50 cash prizes for 1st, 2nd, and 3rd. Must be 18+.",
 };
 
 async function extractScheduleText(): Promise<string> {
