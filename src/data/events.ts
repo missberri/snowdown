@@ -2136,6 +2136,18 @@ export const events: Event[] = [
     cost: 'Free',
     ageRestriction: 'All ages',
   },
+  {
+    id: 'sun1-2',
+    title: 'Build-A-Bong Awards',
+    description: 'See ALL WEEK for details.',
+    date: '2026-02-01',
+    time: '4:20 PM',
+    location: 'Prohibition Herb - 1185 Camino Del Rio',
+    category: 'competition',
+    coordinates: { lat: 37.2730, lng: -107.8780 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
 ];
 
 export const categories = [
