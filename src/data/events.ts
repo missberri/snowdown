@@ -1756,18 +1756,6 @@ export const events: Event[] = [
     cost: '$5 cover',
     ageRestriction: '18+',
   },
-  {
-    id: 'fri30-27',
-    title: 'Twerk Contest',
-    description: 'Think you have junk in the trunk? Twerk it out! $50, $25, free drink for winners.',
-    date: '2026-01-30',
-    time: '10:00 PM',
-    location: 'Starlight Lounge - 937 Main',
-    category: 'competition',
-    coordinates: { lat: 37.2756, lng: -107.8807 },
-    cost: 'Free',
-    ageRestriction: '21+',
-  },
 
   // SATURDAY, JANUARY 31
   {
