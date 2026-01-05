@@ -858,6 +858,18 @@ export const events: Event[] = [
     ageRestriction: '21+',
   },
   {
+    id: 'tue27-8b',
+    title: "Carver Brewing's Beer Dinner",
+    description: 'See MONDAY, 5 PM for details.',
+    date: '2026-01-27',
+    time: '7:30 PM',
+    location: 'Carver Brewing Company - 1022 Main',
+    category: 'entertainment',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: '$75',
+    ageRestriction: '21+',
+  },
+  {
     id: 'tue27-9',
     title: 'Boomtown Air Guitar Brawl',
     description: 'Shred pure mountain air! Whether you channel a Wild West saloon strummer or Red Rocks rock god, bring your best riffs.',
