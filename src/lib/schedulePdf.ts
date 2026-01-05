@@ -77,6 +77,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Hosted by Rotary Clubs of La Plata County and Alpine Bank. Red Ball Express is a local fundraising event organized by the Rotary Clubs of La Plata County. This is the ultimate game of chance and your opportunity to be a \"high roller\" while supporting your community! You could win $5,000, $2,000, or $1,000 and help local non-profits. Here's your chance to make history and have a ball! Find more information at DurangoRedBall.com. Must be 18+.",
   'Spaghetti Dinner':
     "Pasta la vista, baby! A spaghetti dinner is served before and after the parade or until sold out. Strap on your feedsack! Spaghetti, meatballs, salad, and bread. All ages welcome!",
+  'Boomer Hot Dog Show, Gen-X Ski Ballet & Gen-Z/Millenial Rail Jam':
+    "From Colorado's pioneering ski towns to today's world-class resorts, we've been pushing the limits on snow for 150 years. Skiers and snowboarders will compete for a spot on the podium, judged on their line, technical ability, style, variety, and overall impression as they ride and glide through the course. Ages 14 and over, with a participant cap of 40. Proceeds benefit local youth Ski and Snowboard Programs. Register online via the DurangoWinterSportsClub.org website. Prizes for the top 3 males and females in each division: 14 - 18 and 18+.",
 };
 
 async function extractScheduleText(): Promise<string> {
