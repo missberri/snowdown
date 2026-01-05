@@ -896,18 +896,6 @@ export const events: Event[] = [
 
   // WEDNESDAY, JANUARY 28
   {
-    id: 'wed28-0',
-    title: 'Coaster Coasting',
-    description: 'See MONDAY, 2 PM for details.',
-    date: '2026-01-28',
-    time: '2:00 PM',
-    location: '8th Avenue Tavern - 509 E 8th Ave',
-    category: 'competition',
-    coordinates: { lat: 37.2780, lng: -107.8795 },
-    cost: 'Free',
-    ageRestriction: '21+',
-  },
-  {
     id: 'wed28-1',
     title: 'Scavenger Hunt',
     description: 'The original SNOWDOWN Scavenger Hunt is back! Judging on Fri, Jan 30 at 10 AM.',
@@ -942,6 +930,18 @@ export const events: Event[] = [
     coordinates: { lat: 37.2753, lng: -107.8801 },
     cost: 'Free',
     ageRestriction: '18+',
+  },
+  {
+    id: 'wed28-3b',
+    title: 'Coaster Coasting',
+    description: 'See MONDAY, 2 PM for details.',
+    date: '2026-01-28',
+    time: '2:00 PM',
+    location: '8th Avenue Tavern - 509 E 8th Ave',
+    category: 'competition',
+    coordinates: { lat: 37.2780, lng: -107.8795 },
+    cost: 'Free',
+    ageRestriction: '21+',
   },
   {
     id: 'wed28-4',
