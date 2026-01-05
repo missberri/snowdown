@@ -766,6 +766,18 @@ export const events: Event[] = [
     ageRestriction: '21+',
   },
   {
+    id: 'tue27-1b',
+    title: "Carver Brewing's Beer Dinner",
+    description: 'See MONDAY, 5 PM for details.',
+    date: '2026-01-27',
+    time: '5:00 PM',
+    location: 'Carver Brewing Company - 1022 Main',
+    category: 'entertainment',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: '$75',
+    ageRestriction: '21+',
+  },
+  {
     id: 'tue27-2',
     title: 'Become a Colorado Icon',
     description: 'Create the state\'s most iconic symbols with crafts. Bighorn sheep, wildflower brooch, state flag, and more!',
