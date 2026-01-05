@@ -83,6 +83,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Did you miss the live show? Here's your chance to catch the Follies on the big screen! It's almost as good as the real thing, at half the price! All tickets will go on sale at 12 pm on Sat, Jan 10th at AnimasCityTheatre.com. Purchase early as they tend to sell out! Must be 21+.",
   'Twister Tournament':
     "Twisters aren't just for the Eastern Plains! Connect the dots with Aria PettyOne in an all-out SNOWDOWN style twister tournament! Prizes are awarded per round, with the grand prize for the last one standing at the finale. Spectators of all ages are welcome, but participants must be 18+.",
+  "Battle of the DJ's":
+    "Water wars, this is not. You get 30 minutes to impress our esteemed judges and the audience, who will vote for their favorite. Sets must be mixed & performed live. Limited under-21 slots available. Sign up by Wed, Jan 23. Under 18 with a parent allowed until 10 PM. More info can be found on the American Legion website.",
 };
 
 async function extractScheduleText(): Promise<string> {
