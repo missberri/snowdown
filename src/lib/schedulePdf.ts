@@ -31,6 +31,8 @@ const EVENT_TITLE_NEEDLES = Array.from(new Set(events.map((e) => e.title.toUpper
 const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
   'Search for the Silver Bullet':
     "Hosted by A & L Coors & Four Corners Broadcasting. Engage your inner Zebulon Pike or Mary Cronin! Hidden somewhere among the cliffs, canyons, mountains, and meadows of La Plata County, the Silver Bullet awaits. Starting Mon, Jan 26, daily clues will be released on RADIO 101.3 FM & KRSJ 100.5 FM. Be creative and innovative in solving these clues; there's only one Silver Bullet and no second place! Registration is not required. Find it first and win $250 cash, glory, and other fabulous prizes! All ages welcome. Must be 21+ to win.",
+  'Snowdown Theme Contest':
+    "Submit Your Idea for SNOWDOWN 2028! Themes are chosen 2 years in advance. Submit ideas by 5 PM on Sun, Feb 1. Keep it family-friendly and unique. All ages welcome!",
 };
 
 async function extractScheduleText(): Promise<string> {
