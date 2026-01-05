@@ -43,6 +43,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "From gold rush fever to bingo fever; it's Bee-Ingo! Test your luck at the Bee's and see if fortune favors you like Colorado's pioneers. All ages welcome!",
   'Outhouse Stuffing':
     "Colorado may be loaded with open spaces, but not during SNOWDOWN outhouse stuffing! The team that pushes and squeezes the most people into the outhouse within 2 minutes, then keeps the door closed for 10 seconds, wins! Participants can sign up as a team or individually to create the largest stuffable team. The only rule is that waivers must be signed. Must be 21+.",
+  'Crokinole Doubles Tournament':
+    "Performance in the singles tournament determines the doubles tournament pairings.",
 };
 
 async function extractScheduleText(): Promise<string> {
