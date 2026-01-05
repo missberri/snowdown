@@ -53,6 +53,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Colorado and weed go together like skis and snow. Now it's your turn to show off those rolling skills! The Joint Rolling contest (using a non-regulated hemp-based product) will consist of 3 categories: Biggest joint rolled, Fastest joint rolling, and Most stylish joint. Points awarded in each category to crown the SNOWDOWN Joint Rolling Champion. A $50 bar tab, $25 bar tab, and a free drink for 1st, 2nd, and 3rd place. Must be 21+.",
   'Pop Darts Tournament':
     "Join us at The ACT for our Pop Darts tournament! What are Pop Darts? Proof that Durango will make a SNOWDOWN event out of anything. Twelve teams of two compete for a chance to win one of three great prizes awarded to the top 3 teams. Must 21+.",
+  'Pinball Tournament':
+    "A bona fide pinball tournament sponsored by the International Pinball Flipper Association. Format will be 3 strikes, you're out! The winner? The one who survives the chaos with the most points and the least wrist cramps. Prizes for 1st, 2nd, 3rd, and Best Costume. All ages welcome!",
 };
 
 async function extractScheduleText(): Promise<string> {
