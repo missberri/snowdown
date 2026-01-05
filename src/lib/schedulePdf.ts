@@ -103,6 +103,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Adult version of Hobby Horsin'. No, not like that - get your mind out of the gutter! Must be 21+ to ride this ride. See SATURDAY, Jan 31, 3 PM for more details.",
   'Bar Olympics':
     "Bring your best brewery banter and your most hop-forward costume to Lola's Place for the Ultimate Bar Olympics. Teams will go pint-to-pint in a lineup of classic taproom challenges, think cornhole and a few surprise brewhouse-inspired events. Costumes are encouraged, and bonus points are awarded for creativity. Must be 21+.",
+  'Search for the Silver Bullet Awards':
+    "See All Week for more details.",
 };
 
 async function extractScheduleText(): Promise<string> {
