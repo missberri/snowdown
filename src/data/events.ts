@@ -1234,7 +1234,7 @@ export const events: Event[] = [
     location: 'Durango Silverton Narrow Gauge Train Museum - 479 Main',
     category: 'entertainment',
     coordinates: { lat: 37.2753, lng: -107.8801 },
-    cost: '$100/$125',
+    cost: '$95',
     ageRestriction: '21+',
   },
   {
