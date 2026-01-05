@@ -2455,6 +2455,18 @@ export const events: Event[] = [
     ageRestriction: '21+',
   },
   {
+    id: 'sat31-30b',
+    title: 'Strike It Rich Blackjack',
+    description: 'Step up to the felt and test your skills at our high-stakes Blackjack Tournament! This showdown combines luck, strategy, and nerves of steel as players strive to outscore their competitors. After each round, the players with the lowest chip stacks are sent home, while the top card sharks move closer to the final table. Games run 30 minutes each, with 6 tables and 5 players per table. Must be 21+.',
+    date: '2026-01-31',
+    time: '6:00 PM',
+    location: 'Union Social House - 3062 Main',
+    category: 'competition',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
+  {
     id: 'sat31-31',
     title: 'Battle of the Bands',
     description: "Crank up the amps! 45 minutes to blow the judges away. Fans vote for their favorite. Sign up by Sat, Jan 24.",
