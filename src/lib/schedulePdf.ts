@@ -35,6 +35,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Submit Your Idea for SNOWDOWN 2028! Themes are chosen 2 years in advance. Submit ideas by 5 PM on Sun, Feb 1. Keep it family-friendly and unique. All ages welcome!",
   'Snowdown T-Shirt Day':
     "Prepare to make history with the official 2026 SNOWDOWN merch! Purchase your very own themed adornments, posters, and buttons released only once a year! These limited-edition collectibles celebrate 150 years of Colorado statehood. Stop by Magpie's to load up your loot!",
+  'Colorado Costume Dance Party':
+    "Lace up your dancing boots and get ready to party, it's a hootenanny! Join us at the library for a Colorado Costume Dance Party-a fun, high-energy celebration just for little ones. Come dressed as your favorite Colorado critter, mountain explorer, skier, or hometown hero, and dance the day away to kid-friendly tunes! Ages 9 and under.",
 };
 
 async function extractScheduleText(): Promise<string> {
