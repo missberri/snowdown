@@ -2432,6 +2432,17 @@ export const events: Event[] = [
     ageRestriction: '21+',
   },
   {
+    id: 'sat31-29c',
+    title: 'Poetry Duels',
+    description: "Round up your words and hitch your wit, The Durango Poet Laureates are callin' you to sit. Esther Belin and Zoe Golden lead the rhyme, In a fast-draw verse duel, quick as a steed in its prime. Draw your prompt, spin your tale, Face your rival, let your words set sail. The crowd's cheers will steer who rides on, Through storytelling skill, your legend's drawn. Test your style, charm the folk, and earn your name, As a brave wordsmith in the Durango poetic game. All ages welcome!",
+    date: '2026-01-31',
+    time: '6:00 PM',
+    location: 'The Subterrain - 900 Main',
+    category: 'entertainment',
+    coordinates: { lat: 37.2753, lng: -107.8801 },
+    cost: 'Free',
+  },
+  {
     id: 'sat31-30',
     title: 'Human Hungry Hippo',
     description: 'The classic tabletop game, now human-sized! Teams of two collect the most balls. Sign-ups at 5 PM.',
