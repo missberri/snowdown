@@ -122,12 +122,15 @@ const venueCoordinates: Record<string, { lat: number; lng: number }> = {
   "Hesperus Ski Area": { lat: 37.2950, lng: -108.0550 },
 };
 
+// Use environment variable first, then fall back to localStorage
+const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_PUBLIC_TOKEN || '';
+
 const MapView = ({ selectedEventId, onEventSelect }: MapViewProps) => {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
   const markersRef = useRef<mapboxgl.Marker[]>([]);
   const [mapboxToken, setMapboxToken] = useState(() => 
-    localStorage.getItem('mapbox_token') || ''
+    MAPBOX_TOKEN || localStorage.getItem('mapbox_token') || ''
   );
   const [tokenInput, setTokenInput] = useState('');
   const [mapReady, setMapReady] = useState(false);
