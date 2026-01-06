@@ -119,6 +119,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "See WEDNESDAY, Jan 28, 12 PM for details.",
   "Best Chest in the West":
     "Step right up, sugar, and strut your stuff in the Best Chest in the West Contest, open to gents and gals alike! Show off your strength, your style, and your finest assets, whether you're a gym regular, a bodybuilder, or just naturally well-endowed. Judges will be looking for presentation, flair, and overall creativity, with extra points for charm, charisma, and confidence. Bring your sass, your sparkle, (and your pasties?) for the win! A $50 bar tab, $25 bar tab, and a free drink for 1st, 2nd, and 3rd place. Must be 21+.",
+  "Colorado Then and Wow Chess Tournament":
+    "It's a quiet duel at High Noon! Saddle up for a high-stakes showdown where sharp minds meet Rocky Mountain chill. Single-elimination format with 3 competitive categories: 13 and under, 14+ Beginners, and 14+ Advanced. A limited number of chessboards are provided, but if you have a favorite board and/or clock, bring it! You must pre-register for this event by contacting the event coordinator. All ages welcome!",
 };
 
 async function extractScheduleText(): Promise<string> {
