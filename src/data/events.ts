@@ -2287,7 +2287,7 @@ export const events: Event[] = [
     time: '2:00 PM',
     location: 'Rocky Mountain High - 120 E 36th St',
     category: 'competition',
-    coordinates: { lat: 37.2950, lng: -107.8801 },
+    coordinates: { lat: 37.30492025122212, lng: -107.86699953280888 },
     cost: 'Free',
     ageRestriction: '21+',
   },
