@@ -79,6 +79,7 @@ const AboutView = () => {
 
       {/* Footer */}
       <div className="text-center py-6 text-sm text-muted-foreground">
+        <p className="text-accent font-semibold mb-2">Beta Version</p>
         <p>Built with ❤️ by Sheri Baucom</p>
         <p className="mt-1">
           Questions or Comments?{' '}
