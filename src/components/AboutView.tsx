@@ -28,11 +28,14 @@ const AboutView = () => {
         <p className="text-lg text-primary font-semibold">
           Then & Wow!
         </p>
-        <p className="text-sm text-muted-foreground mt-4">
-          This year we celebrate the wild spirit, rugged beauty, and 
-          one-of-a-kind traditions that make Colorado truly special. 
-          From the mining days to mountain legends, experience the 
-          history and wonder of the Centennial State.
+        <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+          Colorado is celebrating its 150th year of statehood in 2026, a milestone known as the sesquicentennial! For 150 years, this state has been shaped by adventure, resilience, and community, and SNOWDOWN brings that legacy to life in a distinctly Durango way.
+        </p>
+        <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
+          For ten days, the town comes alive with more than 200 events, from live music and themed parties to quirky competitions and unforgettable moments. Think classic Western influences mixed with bold, unexpected style: cowboy boots meet disco flair, fringe meets neon, Then meets WOW!
+        </p>
+        <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
+          SNOWDOWN is about coming together, honoring where we've been, and celebrating who we are now. So, dust off your boots and be part of a Colorado tradition that's still going strong. Come celebrate the then, the wow, and everything that makes Colorado, uniquely Colorado!
         </p>
       </div>
 
