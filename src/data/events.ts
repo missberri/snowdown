@@ -2065,7 +2065,7 @@ export const events: Event[] = [
     time: '9:00 AM',
     location: 'Confluence Park (Three Springs) - 100 Confluence Avenue',
     category: 'competition',
-    coordinates: { lat: 37.2800, lng: -107.8900 },
+    coordinates: { lat: 37.23814015122512, lng: -107.82101567436534 },
     cost: 'Free',
   },
   {
