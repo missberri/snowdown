@@ -1,12 +1,13 @@
-import { Mountain, Snowflake, Users, Calendar, MapPin } from 'lucide-react';
+import { Mountain, Users, Calendar, MapPin } from 'lucide-react';
+import snowdownLogo from '@/assets/snowdown-logo.avif';
 
 const AboutView = () => {
   return (
     <div className="relative z-10 h-full overflow-y-auto px-4 pb-24">
       {/* Hero Section */}
       <div className="py-6 text-center">
-        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-accent mb-4">
-          <Snowflake className="w-10 h-10 text-accent-foreground" />
+        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-accent mb-4 overflow-hidden">
+          <img src={snowdownLogo} alt="SNOWDOWN Logo" className="w-full h-full object-contain" />
         </div>
         <h2 className="font-display text-3xl text-foreground mb-2">
           About SNOWDOWN
