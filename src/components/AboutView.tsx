@@ -78,6 +78,9 @@ const AboutView = () => {
         <p className="text-sm text-muted-foreground leading-relaxed mt-3">
           From skijoring down Main to the legendary polar plunge, SNOWDOWN 
           has embodied the adventurous and daring spirit that defines Durango.
+          This year we celebrate the wild spirit, rugged beauty, and one-of-a-kind 
+          traditions that make Colorado truly special. From the mining days to 
+          mountain legends, experience the history and wonder of the Centennial State.
         </p>
       </div>
 
