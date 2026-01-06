@@ -1367,6 +1367,7 @@ export const events: Event[] = [
     category: 'competition',
     coordinates: { lat: 37.2749, lng: -107.8820 },
     cost: 'Free',
+    ageRestriction: 'Ages 7-10',
   },
   {
     id: 'thu29-9',
