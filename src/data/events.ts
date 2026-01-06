@@ -2076,7 +2076,7 @@ export const events: Event[] = [
     time: '10:00 AM',
     location: 'CrossFit Durango - 600 Sawmill Rd',
     category: 'competition',
-    coordinates: { lat: 37.2700, lng: -107.8780 },
+    coordinates: { lat: 37.24698126105145, lng: -107.86930358863283 },
     cost: 'Free',
     ageRestriction: '13+',
   },
