@@ -2280,6 +2280,18 @@ export const events: Event[] = [
     cost: 'Free',
   },
   {
+    id: 'sat31-18b',
+    title: 'Joint Rolling Contest',
+    description: 'Show off your rolling skills, Colorado-style! Using non-regulated hemp-based products, compete in three categories: Biggest Joint Rolled, Fastest Joint Roller, and Most Stylish Joint. Points awarded in each category to crown the Joint Rolling Champion of Colorado! Must be 21+.',
+    date: '2026-01-31',
+    time: '2:00 PM',
+    location: 'Rocky Mountain High - 120 E 36th St',
+    category: 'competition',
+    coordinates: { lat: 37.2950, lng: -107.8801 },
+    cost: 'Free',
+    ageRestriction: '21+',
+  },
+  {
     id: 'sat31-19',
     title: 'Book Games',
     description: 'Game night adventure through Colorado history! From the gold rush to the great outdoors.',
