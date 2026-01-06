@@ -2212,7 +2212,7 @@ export const events: Event[] = [
   },
   {
     id: 'sat31-13',
-    title: 'Gen Alpha SkillsQuest & Gen Beta Skills Experience',
+    title: 'Gen Alpha Skills Quest & Gen Beta Skills Experience',
     description: 'Ski/snowboard showoff contest! Judged on style, technique, and speed. Ages 13 and under, cap of 75.',
     date: '2026-01-31',
     time: '1:00 PM - 4:00 PM',
