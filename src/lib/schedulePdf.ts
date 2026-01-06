@@ -125,6 +125,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "It's a quiet duel at High Noon! Saddle up for a high-stakes showdown where sharp minds meet Rocky Mountain chill. Single-elimination format with 3 competitive categories: 13 and under, 14+ Beginners, and 14+ Advanced. A limited number of chessboards are provided, but if you have a favorite board and/or clock, bring it! You must pre-register for this event by contacting the event coordinator. All ages welcome!",
   "Pepper Pong":
     "Love pickleball, tennis, or ping pong? Then turn up the heat and bring the wow! Pepper Pong is SNOWDOWN's newest spicy showdown at Lola's Place, a paddle sport that's part ping pong, part pickleball, and all pepper-powered fun. Play with three fiery levels: Jalapeño, Habanero, and Ghost Pepper. Bring a partner (or we'll find one for you) and join the heat. Be there or be bland!",
+  "Bicycle Bunny Hop & Foot Down Contest":
+    "Hosted by Pedal Durango, Lola's Place, and The Leland House Suites. Bunny Hoppers compete by raising the bar 1 inch every round. All bikes are welcome. Foot down involves a large group of cyclists balancing on two wheels within a confined area. As faulty riders exit, the confined area decreases. Food and drink specials offered to competitors and spectators. Competitors must wear a helmet; no Miner's helmets please! More details at Pedal Durango's website. Sign-ups begin at 3 PM. Ages 8+.",
 };
 
 async function extractScheduleText(): Promise<string> {
