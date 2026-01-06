@@ -127,6 +127,8 @@ const MANUAL_FULL_DESCRIPTIONS: Record<string, string> = {
     "Love pickleball, tennis, or ping pong? Then turn up the heat and bring the wow! Pepper Pong is SNOWDOWN's newest spicy showdown at Lola's Place, a paddle sport that's part ping pong, part pickleball, and all pepper-powered fun. Play with three fiery levels: Jalapeño, Habanero, and Ghost Pepper. Bring a partner (or we'll find one for you) and join the heat. Be there or be bland!",
   "Bicycle Bunny Hop & Foot Down Contest":
     "Hosted by Pedal Durango, Lola's Place, and The Leland House Suites. Bunny Hoppers compete by raising the bar 1 inch every round. All bikes are welcome. Foot down involves a large group of cyclists balancing on two wheels within a confined area. As faulty riders exit, the confined area decreases. Food and drink specials offered to competitors and spectators. Competitors must wear a helmet; no Miner's helmets please! More details at Pedal Durango's website. Sign-ups begin at 3 PM. Ages 8+.",
+  "Butt Darts":
+    "A perennial favorite, taking the classic party Quarters to the next level! Teams of 4 compete tournament-style for the coveted \"Golden Ass\" trophy. What do Quarters have to do with asses? Come find out! We're not explaining this in print. Must be 21+.",
 };
 
 async function extractScheduleText(): Promise<string> {
