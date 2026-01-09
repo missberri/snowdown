@@ -1,4 +1,4 @@
-import { useMemo, useState, useRef, useEffect } from 'react';
+import { useMemo, useState, useRef, useEffect, MutableRefObject } from 'react';
 import { events } from '@/data/events';
 import EventCard from './EventCard';
 import { format, parseISO } from 'date-fns';
@@ -12,9 +12,10 @@ interface ScheduleViewProps {
   selectedEventId: string | null;
   isLiked: (eventId: string) => boolean;
   onToggleLike: (eventId: string) => void;
+  scrollPosition: MutableRefObject<number>;
 }
 
-const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike }: ScheduleViewProps) => {
+const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike, scrollPosition }: ScheduleViewProps) => {
   const [searchQuery, setSearchQuery] = useState('');
 
   // Get unique dates from events
@@ -27,10 +28,28 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike }:
   const [activeDate, setActiveDate] = useState(uniqueDates[0] || 'all-week');
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
+  // Restore scroll position on mount
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTop = scrollPosition.current;
+    }
+  }, []);
+
+  // Save scroll position on unmount
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    return () => {
+      if (container) {
+        scrollPosition.current = container.scrollTop;
+      }
+    };
+  }, [scrollPosition]);
+
   // Scroll to top when active date changes
   useEffect(() => {
     scrollContainerRef.current?.scrollTo({ top: 0, behavior: 'instant' });
-  }, [activeDate]);
+    scrollPosition.current = 0;
+  }, [activeDate, scrollPosition]);
 
   // Filter events by search query and date
   const filteredEvents = useMemo(() => {

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Header from '@/components/Header';
 import Navigation from '@/components/Navigation';
 import ScheduleView from '@/components/ScheduleView';
@@ -12,6 +12,7 @@ const Index = () => {
   const [activeTab, setActiveTab] = useState<'schedule' | 'my-events' | 'map' | 'about'>('schedule');
   const [selectedEventId, setSelectedEventId] = useState<string | null>(null);
   const { likedEventIds, toggleLike, isLiked, likedCount } = useLikedEvents();
+  const scheduleScrollPosition = useRef(0);
 
   const handleEventSelect = (eventId: string) => {
     // Toggle selection - if clicking same event, deselect; otherwise select new one
@@ -32,6 +33,7 @@ const Index = () => {
               selectedEventId={selectedEventId}
               isLiked={isLiked}
               onToggleLike={toggleLike}
+              scrollPosition={scheduleScrollPosition}
             />
           )}
           {activeTab === 'my-events' && (
