@@ -38,8 +38,8 @@ const Navigation = ({ activeTab, onTabChange, likedCount = 0 }: NavigationProps)
                   }`} 
                 />
                 {tab.id === 'my-events' && likedCount > 0 && (
-                  <span className="absolute -top-1 -right-2 bg-primary text-primary-foreground text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
-                    {likedCount > 9 ? '9+' : likedCount}
+                  <span className="absolute -top-1 -right-2 bg-primary text-primary-foreground text-[10px] font-bold rounded-full min-w-4 h-4 px-1 flex items-center justify-center">
+                    {likedCount > 99 ? '99+' : likedCount}
                   </span>
                 )}
               </div>
