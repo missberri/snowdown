@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useRef, useEffect } from 'react';
 import { events } from '@/data/events';
 import EventCard from './EventCard';
 import { format, parseISO } from 'date-fns';
@@ -25,6 +25,12 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike }:
   });
 
   const [activeDate, setActiveDate] = useState(uniqueDates[0] || 'all-week');
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  // Scroll to top when active date changes
+  useEffect(() => {
+    scrollContainerRef.current?.scrollTo({ top: 0, behavior: 'instant' });
+  }, [activeDate]);
 
   // Filter events by search query and date
   const filteredEvents = useMemo(() => {
@@ -107,7 +113,7 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike }:
       )}
 
       {/* Events List */}
-      <div className="flex-1 overflow-y-auto px-4 pb-24">
+      <div ref={scrollContainerRef} className="flex-1 overflow-y-auto px-4 pb-24">
         <div className="sticky top-0 bg-background/80 backdrop-blur-sm py-2 mb-3 z-10">
           <h2 className="font-display text-xl text-accent">
             {isSearching 
