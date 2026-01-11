@@ -1,15 +1,15 @@
-import { Mountain } from 'lucide-react';
+import snowdownLogo from '@/assets/snowdown-logo.avif';
 
 const Header = () => {
   return (
     <header className="relative z-10 px-4 pt-8 pb-6">
       <div className="text-center">
         <div className="inline-flex items-center gap-2 mb-2">
-          <Mountain className="w-6 h-6 text-accent" />
+          <img src={snowdownLogo} alt="Snowdown" className="w-6 h-6" />
         <span className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">
           January 23 - February 1, 2026
         </span>
-          <Mountain className="w-6 h-6 text-accent" />
+          <img src={snowdownLogo} alt="Snowdown" className="w-6 h-6" />
         </div>
         
         <h1 className="font-display text-5xl md:text-6xl tracking-tight mb-2">
