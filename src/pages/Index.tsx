@@ -11,6 +11,7 @@ import { useLikedEvents } from '@/hooks/useLikedEvents';
 const Index = () => {
   const [activeTab, setActiveTab] = useState<'schedule' | 'my-events' | 'map' | 'about'>('schedule');
   const [selectedEventId, setSelectedEventId] = useState<string | null>(null);
+  const [scheduleActiveDate, setScheduleActiveDate] = useState<string>('all-week');
   const { likedEventIds, toggleLike, isLiked, likedCount } = useLikedEvents();
   const scheduleScrollPosition = useRef(0);
 
@@ -34,6 +35,8 @@ const Index = () => {
               isLiked={isLiked}
               onToggleLike={toggleLike}
               scrollPosition={scheduleScrollPosition}
+              activeDate={scheduleActiveDate}
+              onActiveDateChange={setScheduleActiveDate}
             />
           )}
           {activeTab === 'my-events' && (
