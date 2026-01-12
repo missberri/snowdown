@@ -1,4 +1,4 @@
-import { useMemo, useState, useRef, useEffect, MutableRefObject } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, MutableRefObject } from 'react';
 import { events } from '@/data/events';
 import EventCard from './EventCard';
 import { format, parseISO } from 'date-fns';
@@ -13,19 +13,61 @@ interface ScheduleViewProps {
   isLiked: (eventId: string) => boolean;
   onToggleLike: (eventId: string) => void;
   scrollPosition: MutableRefObject<number>;
+  /** Optional controlled date (kept for tab persistence across views) */
+  activeDate?: string;
+  /** Optional controlled setter */
+  onActiveDateChange?: (date: string) => void;
 }
 
-const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike, scrollPosition }: ScheduleViewProps) => {
+const STORAGE_KEY = 'snowdown_schedule_activeDate';
+
+const ScheduleView = ({
+  onEventSelect,
+  selectedEventId,
+  isLiked,
+  onToggleLike,
+  scrollPosition,
+  activeDate,
+  onActiveDateChange,
+}: ScheduleViewProps) => {
   const [searchQuery, setSearchQuery] = useState('');
 
   // Get unique dates from events
-  const uniqueDates = [...new Set(events.map(e => e.date))].sort((a, b) => {
+  const uniqueDates = [...new Set(events.map((e) => e.date))].sort((a, b) => {
     if (a === 'all-week') return -1;
     if (b === 'all-week') return 1;
     return a.localeCompare(b);
   });
 
-  const [activeDate, setActiveDate] = useState(uniqueDates[0] || 'all-week');
+  // Uncontrolled fallback (also helps if the parent ever remounts)
+  const [internalActiveDate, setInternalActiveDate] = useState<string>(() => {
+    const stored = sessionStorage.getItem(STORAGE_KEY);
+    return stored && stored.trim() ? stored : uniqueDates[0] || 'all-week';
+  });
+
+  const effectiveActiveDate = activeDate ?? internalActiveDate;
+
+  const setActiveDate = useCallback(
+    (date: string) => {
+      sessionStorage.setItem(STORAGE_KEY, date);
+      onActiveDateChange?.(date);
+      if (!onActiveDateChange) setInternalActiveDate(date);
+    },
+    [onActiveDateChange]
+  );
+
+  // Keep storage in sync when controlled
+  useEffect(() => {
+    sessionStorage.setItem(STORAGE_KEY, effectiveActiveDate);
+  }, [effectiveActiveDate]);
+
+  // Ensure the date is valid (e.g. data changes)
+  useEffect(() => {
+    if (!uniqueDates.includes(effectiveActiveDate)) {
+      setActiveDate(uniqueDates[0] || 'all-week');
+    }
+  }, [effectiveActiveDate, setActiveDate, uniqueDates]);
+
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const hasMountedRef = useRef(false);
 
@@ -55,11 +97,11 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike, s
 
     scrollContainerRef.current?.scrollTo({ top: 0, behavior: 'instant' });
     scrollPosition.current = 0;
-  }, [activeDate, scrollPosition]);
+  }, [effectiveActiveDate, scrollPosition]);
 
   // Filter events by search query and date
   const filteredEvents = useMemo(() => {
-    let filtered = events.filter((e) => e.date === activeDate);
+    let filtered = events.filter((e) => e.date === effectiveActiveDate);
 
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase().trim();
@@ -72,7 +114,7 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike, s
     }
 
     return filtered;
-  }, [activeDate, searchQuery]);
+  }, [effectiveActiveDate, searchQuery]);
 
   const selectedEvent = useMemo(
     () => (selectedEventId ? events.find((e) => e.id === selectedEventId) ?? null : null),
@@ -125,7 +167,7 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike, s
                 key={date}
                 onClick={() => setActiveDate(date)}
                 className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                  activeDate === date
+                  effectiveActiveDate === date
                     ? 'bg-gradient-accent text-accent-foreground shadow-glow'
                     : 'bg-muted text-muted-foreground hover:bg-muted/80'
                 }`}
@@ -141,11 +183,11 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike, s
       <div ref={scrollContainerRef} className="flex-1 overflow-y-auto px-4 pb-24">
         <div className="sticky top-0 bg-background/80 backdrop-blur-sm py-2 mb-3 z-10">
           <h2 className="font-display text-xl text-accent">
-            {isSearching 
+            {isSearching
               ? `${filteredEvents.length} result${filteredEvents.length !== 1 ? 's' : ''} for "${searchQuery}"`
-              : activeDate === 'all-week' 
-                ? 'All Week Events' 
-                : format(parseISO(activeDate), 'EEEE, MMMM d')}
+              : effectiveActiveDate === 'all-week'
+                ? 'All Week Events'
+                : format(parseISO(effectiveActiveDate), 'EEEE, MMMM d')}
           </h2>
         </div>
         
