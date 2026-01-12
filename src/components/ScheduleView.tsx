@@ -27,6 +27,7 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike, s
 
   const [activeDate, setActiveDate] = useState(uniqueDates[0] || 'all-week');
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const hasMountedRef = useRef(false);
 
   // Restore scroll position on mount
   useEffect(() => {
@@ -45,8 +46,13 @@ const ScheduleView = ({ onEventSelect, selectedEventId, isLiked, onToggleLike, s
     };
   }, [scrollPosition]);
 
-  // Scroll to top when active date changes
+  // Scroll to top when active date changes (skip initial mount so returning to Schedule restores position)
   useEffect(() => {
+    if (!hasMountedRef.current) {
+      hasMountedRef.current = true;
+      return;
+    }
+
     scrollContainerRef.current?.scrollTo({ top: 0, behavior: 'instant' });
     scrollPosition.current = 0;
   }, [activeDate, scrollPosition]);
