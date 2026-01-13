@@ -600,7 +600,7 @@ export const events: Event[] = [
     title: 'Euchre Tournament',
     description: 'Teams drawn in a random double-elimination tournament. Registration begins at 10 AM. Prizes for 1st, 2nd, 3rd, and Best Costume.',
     date: '2026-01-25',
-    time: '1:00 PM',
+    time: '11:30 AM',
     location: 'VFW - 1550 Main',
     category: 'competition',
     coordinates: { lat: 37.2753, lng: -107.8801 },
