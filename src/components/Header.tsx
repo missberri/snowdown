@@ -6,9 +6,6 @@ const Header = () => {
       <div className="text-center">
         <div className="inline-flex items-center gap-2 mb-2">
           <img src={snowdownLogo} alt="Snowdown" className="w-6 h-6" />
-        <span className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">
-          January 23 - February 1, 2026
-        </span>
           <img src={snowdownLogo} alt="Snowdown" className="w-6 h-6" />
         </div>
         
@@ -21,6 +18,9 @@ const Header = () => {
         </p>
         <p className="text-sm text-accent font-semibold tracking-widest uppercase mt-1">
           Then & Wow!
+        </p>
+        <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mt-2">
+          January 23 - February 1, 2026
         </p>
       </div>
     </header>
