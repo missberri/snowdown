@@ -3,8 +3,10 @@ const Header = () => {
   return <header className="relative z-10 px-4 pt-8 pb-6">
       <div className="text-center">
         <div className="inline-flex items-center gap-2 mb-2">
-          
           <img src={snowdownLogo} alt="Snowdown" className="w-6 h-6" />
+          <h1 className="text-3xl font-display font-bold tracking-tight text-foreground">
+            SNOWDOWN
+          </h1>
         </div>
         
         
