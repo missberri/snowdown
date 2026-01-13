@@ -4,7 +4,7 @@ const Header = () => {
       <div className="text-center">
         <div className="inline-flex items-center gap-2 mb-2">
           <img src={snowdownLogo} alt="Snowdown" className="w-6 h-6" />
-          <h1 className="text-3xl font-display font-bold tracking-tight text-foreground">
+          <h1 className="font-display font-bold tracking-tight text-5xl text-primary">
             SNOWDOWN
           </h1>
         </div>
