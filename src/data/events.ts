@@ -1301,7 +1301,7 @@ export const events: Event[] = [
   {
     id: 'thu29-3',
     title: 'Mah Jongg Tournament',
-    description: 'Following NMJL rules. Cash prizes for winners. Bring your 2025 NMJL card. Sign up by 5 PM on Tues, Jan 29.',
+    description: 'Following NMJL rules. Cash prizes for winners. Bring your 2025 NMJL card. Sign up by 5 PM on Tues, Jan 27.',
     date: '2026-01-29',
     time: '12:30 PM - 3:30 PM',
     location: 'Dalton Ranch Clubhouse Restaurant - 589 County Rd 252',
