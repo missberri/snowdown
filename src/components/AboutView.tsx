@@ -1,13 +1,11 @@
 import { Mountain, Users, Calendar, MapPin } from 'lucide-react';
 import snowdownLogo from '@/assets/snowdown-logo.avif';
-
 const AboutView = () => {
-  return (
-    <div className="relative z-10 h-full overflow-y-auto px-4 pb-24">
+  return <div className="relative z-10 h-full overflow-y-auto px-4 pb-24">
       {/* Hero Section */}
       <div className="py-6 text-center">
         <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-accent mb-4 overflow-hidden">
-          <img src={snowdownLogo} alt="SNOWDOWN Logo" className="w-full h-full object-contain" />
+          <img alt="SNOWDOWN Logo" className="w-full h-full object-contain" src="/lovable-uploads/03d559e1-1c10-42ce-b9e1-d956d5a0ed36.jpg" />
         </div>
         <h2 className="font-display text-3xl text-foreground mb-2">
           About SNOWDOWN
@@ -95,8 +93,6 @@ const AboutView = () => {
           </a>
         </p>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default AboutView;
