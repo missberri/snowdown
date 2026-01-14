@@ -936,7 +936,7 @@ export const events: Event[] = [
     title: 'Coaster Coasting',
     description: 'See MONDAY, 2 PM for details.',
     date: '2026-01-28',
-    time: '2:00 PM',
+    time: '4:00 PM',
     location: '8th Avenue Tavern - 509 E 8th Ave',
     category: 'competition',
     coordinates: { lat: 37.2780, lng: -107.8795 },
