@@ -2234,18 +2234,6 @@ export const events: Event[] = [
     cost: 'Free',
   },
   {
-    id: 'sat31-15',
-    title: 'Two-Headed Giant Commander',
-    description: 'Magic: The Gathering tournament! Build decks from six packs, Swiss-style format. Registration at 12 PM.',
-    date: '2026-01-31',
-    time: '1:00 PM',
-    location: 'Guild House Games - 835 Main Ste 203',
-    category: 'competition',
-    coordinates: { lat: 37.2753, lng: -107.8801 },
-    cost: '$5/team',
-    ageRestriction: '13+',
-  },
-  {
     id: 'sat31-16',
     title: 'Canine Fashion Show',
     description: 'Strut your furry sidekick! Categories: funniest, dressed alike, and SNOWDOWN theme-related.',
