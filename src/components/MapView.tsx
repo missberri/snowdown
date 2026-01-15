@@ -151,6 +151,9 @@ const MapView = ({ selectedEventId, onEventSelect }: MapViewProps) => {
       "American Legion - 878 E 2nd Ave": "Durango American Legion - 878 E 2nd Ave",
       "Ska World Headquarters. - 225 Girard Street": "Ska Brewing - 225 Girard",
       "Ska World Headquarters - 225 Girard St": "Ska Brewing - 225 Girard",
+      "Elks Ballroom - 901 E 2nd Ave": "Elks Lodge #507 - 901 E 2nd Ave",
+      "Durango Elks Lodge - 901 E 2nd Ave": "Elks Lodge #507 - 901 E 2nd Ave",
+      "Durango Elks Lodge901 E 2nd Ave.": "Elks Lodge #507 - 901 E 2nd Ave",
     };
     return locationAliases[location] || location;
   };
