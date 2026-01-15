@@ -144,15 +144,27 @@ const MapView = ({ selectedEventId, onEventSelect }: MapViewProps) => {
 
   const selectedEvent = events.find(e => e.id === selectedEventId);
 
+  // Normalize location names to group similar venues together
+  const normalizeLocation = (location: string): string => {
+    // Map variant location names to a canonical form
+    const locationAliases: Record<string, string> = {
+      "American Legion - 878 E 2nd Ave": "Durango American Legion - 878 E 2nd Ave",
+      "Ska World Headquarters. - 225 Girard Street": "Ska Brewing - 225 Girard",
+      "Ska World Headquarters - 225 Girard St": "Ska Brewing - 225 Girard",
+    };
+    return locationAliases[location] || location;
+  };
+
   // Get unique locations by name with their events
   const locationEvents = events.reduce((acc, event) => {
-    const key = event.location;
+    const normalizedLocation = normalizeLocation(event.location);
+    const key = normalizedLocation;
     if (!acc[key]) {
       // Use venue coordinates if available, otherwise use event's original coordinates
-      const coords = venueCoordinates[event.location] || event.coordinates;
+      const coords = venueCoordinates[event.location] || venueCoordinates[normalizedLocation] || event.coordinates;
       acc[key] = {
         coordinates: coords,
-        location: event.location,
+        location: normalizedLocation,
         events: [],
       };
     }
