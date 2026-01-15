@@ -49,6 +49,7 @@ const venueCoordinates: Record<string, { lat: number; lng: number }> = {
   "Union Social House - 3062 Main": { lat: 37.298917834141875, lng: -107.8714222481999 },
   "Powerhouse Science Center - 1333 Camino Del Rio": { lat: 37.278719724448116, lng: -107.88003249035341 },
   "Ska World Headquarters. - 225 Girard Street": { lat: 37.23897374225163, lng: -107.87604673082834 },
+  "Ska World Headquarters - 225 Girard St": { lat: 37.23897374225163, lng: -107.87604673082834 },
   "Ska Brewing - 225 Girard": { lat: 37.23897374225163, lng: -107.87604673082834 },
   "Downtown Durango - Main Avenue - From College Dr to 12th St": { lat: 37.274463511532645, lng: -107.88034834336818 },
   "Gravity Lab - 732 CR-233": { lat: 37.22937958002034, lng: -107.80894354635663 },
