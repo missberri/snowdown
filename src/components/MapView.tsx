@@ -22,6 +22,7 @@ const DURANGO_CENTER: [number, number] = [-107.8801, 37.2753];
 const venueCoordinates: Record<string, { lat: number; lng: number }> = {
   // From uploaded spreadsheet
   "Lola's Place - 725 E 2nd. Avenue": { lat: 37.271591141804066, lng: -107.88015291629407 },
+  "Lola's Place - 725 E 2nd Ave": { lat: 37.271591141804066, lng: -107.88015291629407 },
   "The Balcony - 600 Main Ave": { lat: 37.270331989135336, lng: -107.88139625800191 },
   "8th Ave Tavern - 509 E 8th Ave": { lat: 37.2680936268276, lng: -107.87264463470723 },
   "8th Avenue Tavern - 509 E 8th Ave": { lat: 37.2680936268276, lng: -107.87264463470723 },
