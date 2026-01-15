@@ -2308,7 +2308,7 @@ export const events: Event[] = [
     description: "Saddle up, partners! Grab your trusty hobby horse and race across the DoubleTree corral in our first-ever Steeple Chase showdown for kids. Teams of two will leap over hurdles, dodge waterin' holes, and wrangle through obstacles in a test of speed, agility, and cowboy spirit. Be the first to cross the finish line without losin' yer hat or yer nerve, and ride off as the Steeple Chase Champion! Sign-ups start at 2:30 PM. Ages 3–17.",
     date: '2026-01-31',
     time: '3:00 PM',
-    location: 'Doubletree Grand Ballroom - 501 Camino Del Rio',
+    location: 'DoubleTree Grand Ballroom - 501 Camino Del Rio',
     category: 'competition',
     coordinates: { lat: 37.2730, lng: -107.8780 },
     cost: 'Free',
