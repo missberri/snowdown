@@ -255,20 +255,20 @@ const MapView = ({ selectedEventId, onEventSelect }: MapViewProps) => {
 
       {/* Selected Location with Multiple Events */}
       {selectedLocation && (
-        <div className="absolute bottom-24 left-4 right-4 glass-card rounded-xl p-4 animate-fade-in max-h-[300px] flex flex-col">
+        <div className="absolute bottom-24 left-4 right-4 glass-card rounded-xl p-4 animate-fade-in flex flex-col" style={{ maxHeight: 'calc(100% - 120px)' }}>
           <button 
             onClick={() => setSelectedLocation(null)}
             className="absolute top-2 right-2 p-1 hover:bg-muted rounded-full z-10"
           >
             <X className="w-4 h-4" />
           </button>
-          <div className="flex items-center gap-2 text-accent mb-3">
+          <div className="flex items-center gap-2 text-accent mb-2 flex-shrink-0">
             <MapPin className="w-4 h-4 flex-shrink-0" />
             <span className="text-sm font-medium truncate pr-6">{selectedLocation.location}</span>
           </div>
-          <p className="text-xs text-muted-foreground mb-2">{selectedLocation.events.length} events at this location</p>
-          <ScrollArea className="flex-1">
-            <div className="space-y-2 pr-2">
+          <p className="text-xs text-muted-foreground mb-3 flex-shrink-0">{selectedLocation.events.length} events at this location</p>
+          <ScrollArea className="flex-1 min-h-0">
+            <div className="space-y-2 pr-3">
               {selectedLocation.events.map((event) => (
                 <button
                   key={event.id}
