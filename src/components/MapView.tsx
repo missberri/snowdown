@@ -3,7 +3,7 @@ import { events, Event } from '@/data/events';
 import { MapPin, X, Calendar, Clock } from 'lucide-react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { ScrollArea } from '@/components/ui/scroll-area';
+
 
 interface MapViewProps {
   selectedEventId: string | null;
@@ -255,46 +255,44 @@ const MapView = ({ selectedEventId, onEventSelect }: MapViewProps) => {
 
       {/* Selected Location with Multiple Events */}
       {selectedLocation && (
-        <div className="absolute bottom-24 left-4 right-14 glass-card rounded-xl p-4 animate-fade-in flex flex-col" style={{ maxHeight: 'calc(100% - 120px)' }}>
+        <div className="absolute bottom-24 left-4 right-14 glass-card rounded-xl p-4 animate-fade-in">
           <button 
             onClick={() => setSelectedLocation(null)}
             className="absolute top-2 right-2 p-1 hover:bg-muted rounded-full z-10"
           >
             <X className="w-4 h-4" />
           </button>
-          <div className="flex items-center gap-2 text-accent mb-2 flex-shrink-0">
+          <div className="flex items-center gap-2 text-accent mb-2">
             <MapPin className="w-4 h-4 flex-shrink-0" />
             <span className="text-sm font-medium truncate pr-6">{selectedLocation.location}</span>
           </div>
-          <p className="text-xs text-muted-foreground mb-3 flex-shrink-0">{selectedLocation.events.length} events at this location</p>
-          <ScrollArea className="flex-1 min-h-0">
-            <div className="space-y-2 pr-3">
-              {selectedLocation.events.map((event) => (
-                <button
-                  key={event.id}
-                  onClick={() => {
-                    onEventSelect(event.id);
-                    setSelectedLocation(null);
-                  }}
-                  className="w-full text-left p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors"
-                >
-                  <h4 className="font-display text-sm text-foreground mb-1 line-clamp-1">
-                    {event.title}
-                  </h4>
-                  <div className="flex items-center gap-3 text-xs text-muted-foreground">
-                    <span className="flex items-center gap-1">
-                      <Calendar className="w-3 h-3" />
-                      {event.date === 'all-week' ? 'All Week' : event.date}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-3 h-3" />
-                      {event.time}
-                    </span>
-                  </div>
-                </button>
-              ))}
-            </div>
-          </ScrollArea>
+          <p className="text-xs text-muted-foreground mb-3">{selectedLocation.events.length} events at this location</p>
+          <div className="max-h-[250px] overflow-y-auto space-y-2 pr-1">
+            {selectedLocation.events.map((event) => (
+              <button
+                key={event.id}
+                onClick={() => {
+                  onEventSelect(event.id);
+                  setSelectedLocation(null);
+                }}
+                className="w-full text-left p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors"
+              >
+                <h4 className="font-display text-sm text-foreground mb-1 line-clamp-1">
+                  {event.title}
+                </h4>
+                <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                  <span className="flex items-center gap-1">
+                    <Calendar className="w-3 h-3" />
+                    {event.date === 'all-week' ? 'All Week' : event.date}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Clock className="w-3 h-3" />
+                    {event.time}
+                  </span>
+                </div>
+              </button>
+            ))}
+          </div>
         </div>
       )}
 
