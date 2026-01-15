@@ -87,7 +87,7 @@ const venueCoordinates: Record<string, { lat: number; lng: number }> = {
   "D&SNG Museum - 479 Main Ave": { lat: 37.26838038169863, lng: -107.88227053286037 },
   "Alpine Bank - 1099 Main Ave": { lat: 37.276029648723004, lng: -107.87904121166144 },
   "Los Amigos Del Sur - 835 Main Ave": { lat: 37.27321839942897, lng: -107.88076773157977 },
-  "McDonalds - 201 W College Dr": { lat: 37.27020471628864, lng: -107.88271423712045 },
+  "McDonalds - 201 W College Dr": { lat: 37.270349860180254, lng: -107.88154479373675 },
   "Folsom Place - 11 Folsom Place": { lat: 37.28842710948251, lng: -107.86782794617116 },
   "Folsom Park - 11 Folsom Place": { lat: 37.28842710948251, lng: -107.86782794617116 },
   "Best Western Rio Grande Inn - 400 E 2nd Ave": { lat: 37.26765417057392, lng: -107.88088194635468 },
