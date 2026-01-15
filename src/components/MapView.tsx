@@ -255,7 +255,7 @@ const MapView = ({ selectedEventId, onEventSelect }: MapViewProps) => {
 
       {/* Selected Location with Multiple Events */}
       {selectedLocation && (
-        <div className="absolute bottom-24 left-4 right-4 glass-card rounded-xl p-4 animate-fade-in flex flex-col" style={{ maxHeight: 'calc(100% - 120px)' }}>
+        <div className="absolute bottom-24 left-4 right-14 glass-card rounded-xl p-4 animate-fade-in flex flex-col" style={{ maxHeight: 'calc(100% - 120px)' }}>
           <button 
             onClick={() => setSelectedLocation(null)}
             className="absolute top-2 right-2 p-1 hover:bg-muted rounded-full z-10"
