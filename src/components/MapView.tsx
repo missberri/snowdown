@@ -63,6 +63,8 @@ const venueCoordinates: Record<string, { lat: number; lng: number }> = {
   "Dalton Ranch Clubhouse Restaurant - 589 County Rd 252": { lat: 37.39199507374744, lng: -107.83750380401884 },
   "Durango Elks Lodge - 901 E 2nd Ave": { lat: 37.27613424133576, lng: -107.87961598942893 },
   "Durango Elks Lodge901 E 2nd Ave.": { lat: 37.27613424133576, lng: -107.87961598942893 },
+  "Elks Lodge #507 - 901 E 2nd Ave": { lat: 37.27613424133576, lng: -107.87961598942893 },
+  "Elks Ballroom - 901 E 2nd Ave": { lat: 37.27613424133576, lng: -107.87961598942893 },
   "EsoTerra Cider & Wines - 558 Main Ave": { lat: 37.26993721680437, lng: -107.88105080459154 },
   "EsoTerra Cider & Wines - 558 Main": { lat: 37.26993721680437, lng: -107.88105080459154 },
   "Hermosa Cafe - 738 Main Ave": { lat: 37.271950076866524, lng: -107.88109690402499 },
