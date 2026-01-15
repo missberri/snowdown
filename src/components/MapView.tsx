@@ -29,7 +29,7 @@ const venueCoordinates: Record<string, { lat: number; lng: number }> = {
   "Wild Horse Saloon - 601 E 2nd Ave Ste A": { lat: 37.2702543478759, lng: -107.88054799663774 },
   "Black Heron Lounge - 726 Main Ave": { lat: 37.271746826497164, lng: -107.88078056169545 },
   "Black Heron Lounge - 726 Main": { lat: 37.271746826497164, lng: -107.88078056169545 },
-  "La Plata County Fairgrounds & Event Center": { lat: 37.292721644626695, lng: -107.87232581567127 },
+  "La Plata County Fairgrounds & Event Center": { lat: 37.29282406851975, lng: -107.87249747686177 },
   "Blue Rain Gallery - 934 Main Ave, Unit B": { lat: 37.27407652076874, lng: -107.88001403101325 },
   "Blue Rain Gallery - 934 Main": { lat: 37.27407652076874, lng: -107.88001403101325 },
   "The Subterrain - 900 Main Ave": { lat: 37.273588572150885, lng: -107.88040510402486 },
