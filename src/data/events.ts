@@ -335,7 +335,7 @@ export const events: Event[] = [
     description: 'The team that pushes and squeezes the most people into the outhouse within 2 minutes wins!',
     date: '2026-01-24',
     time: '1:00 PM',
-    location: 'Gazpacho Restaurant - 431 E 2nd Ave',
+    location: 'Gazpacho New Mexican Restaurant - 431 E 2nd Ave',
     category: 'competition',
     coordinates: { lat: 37.2749, lng: -107.8820 },
     cost: 'Free',
