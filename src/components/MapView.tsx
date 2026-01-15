@@ -42,6 +42,7 @@ const venueCoordinates: Record<string, { lat: number; lng: number }> = {
   "11th Street Station - 1101 Main": { lat: 37.27606070292123, lng: -107.88038183470684 },
   "Durango Public Library - 1900 E 3rd Ave": { lat: 37.283916717024944, lng: -107.8736275463538 },
   "Durango American Legion - 878 E 2nd Ave": { lat: 37.273319574719224, lng: -107.87925590402484 },
+  "American Legion - 878 E 2nd Ave": { lat: 37.273319574719224, lng: -107.87925590402484 },
   "Animas Chocolate Company - 920 Main Ave": { lat: 37.2737154970162, lng: -107.88033064820114 },
   "Union Social House - 3062 Main Ave": { lat: 37.298917834141875, lng: -107.8714222481999 },
   "Union Social House - 3062 Main": { lat: 37.298917834141875, lng: -107.8714222481999 },
