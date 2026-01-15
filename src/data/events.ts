@@ -1989,7 +1989,7 @@ export const events: Event[] = [
     description: 'Two DJs, two channels, one dance floor - you choose your vibe with the flick of a switch!',
     date: '2026-01-30',
     time: '9:00 PM',
-    location: '11th Street Station - 1101 Main Ave',
+    location: '11th Street Station - 1101 Main',
     category: 'entertainment',
     coordinates: { lat: 37.2753, lng: -107.8801 },
     cost: 'Free',
