@@ -112,6 +112,7 @@ const venueCoordinates: Record<string, { lat: number; lng: number }> = {
   "Office Depot - 331 S Camino Del Rio Ste D": { lat: 37.251270392604546, lng: -107.878102704026 },
   "Cork & Larder - 120 W 8th St": { lat: 37.27243174964322, lng: -107.8814020040249 },
   "The Powerhouse - 1333 Camino Del Rio": { lat: 37.278719724448116, lng: -107.88003249035341 },
+  "The Powerhouse - 1333 Camino del Rio": { lat: 37.278719724448116, lng: -107.88003249035341 },
   "CrossFit Durango - 600 Sawmill Road": { lat: 37.247015423111534, lng: -107.86930358868518 },
   "Pet Haus - 1444 Main Ave": { lat: 37.27940106718191, lng: -107.87852254053037 },
   "Pet Haus - 1444 Main": { lat: 37.27940106718191, lng: -107.87852254053037 },
