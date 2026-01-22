@@ -705,10 +705,10 @@ export const events: Event[] = [
     cost: 'Free',
   },
   {
-    id: 'mon26-4',
+    id: 'tue27-billiards',
     title: '9-Ball Billiards Tournament',
     description: 'Double-elimination bracket of 32 players. Cash prizes for 1st, 2nd, and 3rd. Sign up 30 minutes before.',
-    date: '2026-01-26',
+    date: '2026-01-27',
     time: '6:00 PM',
     location: 'The Garage - 121 W 8th St',
     category: 'competition',
