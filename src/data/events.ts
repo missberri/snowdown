@@ -979,10 +979,10 @@ export const events: Event[] = [
     ageRestriction: '18+',
   },
   {
-    id: 'wed28-5c',
+    id: 'thu29-bunnyhop',
     title: 'Bicycle Bunny Hop & Foot Down Contest',
     description: "Hosted by Pedal Durango, Lola's Place, and The Leland House Suites. Bunny Hoppers compete by raising the bar 1 inch every round. All bikes are welcome. Foot down involves a large group of cyclists balancing on two wheels within a confined area. As faulty riders exit, the confined area decreases. Food and drink specials offered to competitors and spectators. Competitors must wear a helmet; no Miner's helmets please! More details at Pedal Durango's website. Sign-ups begin at 3 PM. Ages 8+.",
-    date: '2026-01-28',
+    date: '2026-01-29',
     time: '4:00 PM',
     location: "Lola's Place - 725 E 2nd Ave",
     category: 'competition',
