@@ -2229,7 +2229,7 @@ export const events: Event[] = [
     time: '1:00 PM',
     location: "McDonald's - 201 W College Dr",
     category: 'entertainment',
-    coordinates: { lat: 37.2785, lng: -107.8800 },
+    coordinates: { lat: 37.270238867817675, lng: -107.88308974619224 },
     cost: 'Free',
   },
   {
