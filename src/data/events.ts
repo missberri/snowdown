@@ -1108,18 +1108,6 @@ export const events: Event[] = [
     ageRestriction: '21+',
   },
   {
-    id: 'wed28-16',
-    title: 'Sober Paint & Sip',
-    description: 'Evening of artistic expression in an alcohol-free environment. Fee covers art supplies and two mocktails.',
-    date: '2026-01-28',
-    time: '6:00 PM - 8:00 PM',
-    location: 'Durango American Legion - 878 E 2nd Ave',
-    category: 'activity',
-    coordinates: { lat: 37.2749, lng: -107.8820 },
-    cost: '$30',
-    ageRestriction: '18+',
-  },
-  {
     id: 'wed28-17',
     title: 'Pinball Tournament',
     description: 'International Pinball Flipper Association tournament. 3 strikes, you\'re out! Prizes for 1st, 2nd, 3rd, and Best Costume.',
