@@ -2048,7 +2048,7 @@ export const events: Event[] = [
   {
     id: 'sat31-1',
     title: 'Castaway - Fly Rod Casting Contest',
-    description: 'Test your angling finesse on targets at 20 ft, 40 ft, 60 ft, and the bullseye. Rod, reel, and line provided.',
+    description: 'Test your angling finesse on targets at 20 ft, 40 ft, 60 ft, and the bullseye. Rod, reel, and line provided. Hosted by San Juan Angler.',
     date: '2026-01-31',
     time: '9:00 AM',
     location: 'Confluence Park (Three Springs) - 100 Confluence Avenue',
