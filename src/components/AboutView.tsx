@@ -86,12 +86,6 @@ const AboutView = () => {
       <div className="text-center py-6 text-sm text-muted-foreground">
         <p className="text-accent font-semibold mb-2">Version 1.0</p>
         <p>Built with ❤️ by Sheri Baucom</p>
-        <p className="mt-1">
-          Questions or Comments?{' '}
-          <a href="mailto:sheri@snowdown.org" className="text-accent hover:underline">
-            sheri@snowdown.org
-          </a>
-        </p>
       </div>
     </div>;
 };
