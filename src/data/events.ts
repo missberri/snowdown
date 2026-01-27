@@ -2585,7 +2585,7 @@ export const events: Event[] = [
     time: '7:00 AM - 12:00 PM',
     location: 'La Plata County Fairgrounds - 2500 Main Ave',
     category: 'activity',
-    coordinates: { lat: 37.2650, lng: -107.8750 },
+    coordinates: { lat: 37.2925253316655, lng: -107.872411646341 },
     cost: '$10 adults, $6 kids age 6-12, FREE for kids under 6',
     ageRestriction: 'All ages',
   },
