@@ -2566,18 +2566,6 @@ export const events: Event[] = [
 
   // SUNDAY, FEBRUARY 1
   {
-    id: 'sun1-0',
-    title: 'La Plata County Search and Rescue Pancake Breakfast and Silent Auction',
-    description: 'Come eat pancakes with the La Plata County Search and Rescue Team from 7 am to noon! Bid on over $10,000 worth of items from local businesses in the silent auction. Bring your family and friends. See you there!',
-    date: '2026-02-01',
-    time: '7:00 AM - 12:00 PM',
-    location: 'La Plata County Fairgrounds - 2500 Main Ave',
-    category: 'activity',
-    coordinates: { lat: 37.2650, lng: -107.8750 },
-    cost: '$10 adults, $6 kids age 6-12, FREE for kids under 6',
-    ageRestriction: 'All ages',
-  },
-  {
     id: 'sun1-1',
     title: 'SNOWDOWN Bathrobe Day',
     description: "You did it, Durango! You survived 9 days of crazy SNOWDOWN debauchery! Whether you're planning on duct taping what's left of your costume back together and roaming Main or just lying on the couch...You get a pass to do it all in your bathrobe. Everyone's a winner because SNOWDOWN 2027 starts in less than 365 days!",
@@ -2587,6 +2575,18 @@ export const events: Event[] = [
     category: 'activity',
     coordinates: { lat: 37.2753, lng: -107.8801 },
     cost: 'Free',
+    ageRestriction: 'All ages',
+  },
+  {
+    id: 'sun1-0',
+    title: 'La Plata County Search and Rescue Pancake Breakfast and Silent Auction',
+    description: 'Come eat pancakes with the La Plata County Search and Rescue Team from 7 am to noon! Bid on over $10,000 worth of items from local businesses in the silent auction. Bring your family and friends. See you there!',
+    date: '2026-02-01',
+    time: '7:00 AM - 12:00 PM',
+    location: 'La Plata County Fairgrounds - 2500 Main Ave',
+    category: 'activity',
+    coordinates: { lat: 37.2650, lng: -107.8750 },
+    cost: '$10 adults, $6 kids age 6-12, FREE for kids under 6',
     ageRestriction: 'All ages',
   },
   {
